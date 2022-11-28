@@ -1,0 +1,62 @@
+/*sub4_3 content css*/
+
+/*cont1*/
+#content .cont1 h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+#content .contactForm{
+    width: 90%;
+    margin: 0 auto;
+}
+#content .contactForm ul li{
+    margin-bottom: 20px;
+    border: 1px solid red;
+    height: 30px;
+}
+#content .contactForm ul li dl dt label{
+    line-height: 30px;
+}
+#content .contactForm ul li dl dd input{
+    line-height: 30px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+#content .contactForm ul li dl dd input:focus{
+    outline: none;
+}
+/*유저이름*/
+#content .contactForm .unameArea dl{
+    position: relative;
+}
+#content .contactForm .unameArea dl dt{
+    width: 20%;
+    text-align: center;
+}
+#content .contactForm .unameArea dl dd{
+    width: 80%;
+    position: absolute; top: 0; left: 20%;
+}
+#content .contactForm .unameArea dl dd input{
+    width: 100%;
+}
+
+/*연락처*/
+#content .contactForm .phone dl{
+    position: relative;
+}
+#content .contactForm .phone dl dt{
+    width: 20%;
+    text-align: center;
+}
+#content .contactForm .phone dl dd{
+    width: 80%;
+    position: absolute; top: 0; left: 20%;
+}
+#content .contactForm .phone dl dd input{
+    width: 100%;
+}

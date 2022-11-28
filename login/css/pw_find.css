@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0
+}
+ul{
+    list-style: none;
+}
+.hidden{display: block;
+    position: absolute;
+    z-index: 10;
+    left: -1000%;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff}
+
+/*******************/
+#content{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px 1px rgb(0 0 0 / 20%);
+}
+#content h1{
+    margin-bottom: 40px;
+}
+#content h1 a{
+    display: block;
+    text-indent: -9999px;
+    width: 204px;
+    height: 46px;
+    background: url(../images/mainLogo2.png);
+    margin: 0 auto;
+}
+#content #title{
+    margin-bottom: 30px;
+}
+#content #title p{
+    text-align: center;
+}
+#content fieldset input{
+    text-align: center;
+}
+#content fieldset{
+    border: none;
+}
+#content fieldset .first_input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#content fieldset .first_input .find_name,
+#content fieldset .first_input .find_id{
+    width: 48%;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    border-radius: 0;
+}
+#content fieldset .first_input .find_name:focus,
+#content fieldset .first_input .find_id:focus{
+    outline:none;
+}
+#content fieldset .telBox{
+    margin-bottom: 30px;
+}
+#content fieldset .telBox select,
+#content fieldset .telBox input{
+    width: 29.8%;
+    text-align: center;
+    height: 50px;
+}
+#content fieldset .find{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: rgb(1 ,52 ,128);
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.1em
+}
+#content .go{
+    margin-bottom: 20px;
+}
+#content .go li:nth-child(1) a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background: #d5d5d5;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em
+}
+#content .finish{
+    display: flex;
+    justify-content: center
+}
+#content .finish #join_button,
+#content .finish .go_id{
+    width: 30%;
+    text-align: center;
+}
+#content .finish #join_button a,
+#content .finish .go_id a{
+    text-decoration: none;
+    color: #333;
+}
+#content .finish #join_button a:hover,
+#content .finish .go_id a:hover{
+    color: rgb(1, 52, 128);
+}

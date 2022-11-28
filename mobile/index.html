@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- 상태 바의 스타일을 지정 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- 홈 화면에서 표시되는 앱 이름을 지정 -->
+<meta name="apple-mobile-web-app-title" content="Timer">
+<!-- 홈 화면에서 표시되는 앱 아이콘을 지정 -->
+<link rel="apple-touch-icon" href="./Untitled-1.png">
+
+<title>세방 모바일</title>
+
+<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+<link rel="apple-touch-startup-image" href="./startup.png">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+
+
+
+<script src="https://kit.fontawesome.com/c76edfea85.js" crossorigin="anonymous"></script>
+<script src="js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+</head>
+
+<body>
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+ 
+  <div id="wrap">
+    <header id="headerArea" >
+        <div class="headerInner">
+            <h1><a href="index.html">세방 로고</a></h1>
+            <a href="#" class="nav_open">
+                네비게이션열기<span></span>
+            </a>
+        </div>
+        
+        <nav id="gnb">
+           <h2 class="hidden">네비게이션메뉴</h2>
+           <ul class="mainMenu">  
+                <li class="depth1"><h3><a href="./sub1/sub1_1.html">회사소개<span>+</span></a></h3>
+                    <ul>
+                        <li><a href="./sub1/sub1_1.html">기업소개</a></li>
+                        <li><a href="./sub1/sub1_2.html">연혁</a></li>
+                        <li><a href="./sub1/sub1_3.html">오시는 길</a></li>
+                    </ul>
+                </li>
+
+                <li class="depth1">
+                    <h3><a href="./sub2/sub2.html#cont1">사업영역<span>+</span></a></h3>
+                </li>
+
+                <li class="depth1"><h3><a href="#">경영전략<span>+</span></a></h3>
+                    <ul>
+                        <li><a href="./sub3/sub3_1.html">경영이념</a></li>
+                        <li><a href="./sub3/sub3_2.html">윤리경영</a></li>
+                        <li><a href="./sub3/sub3_3.html">지속가능경영</a></li>
+                    </ul>
+                </li>
+                <li class="depth1"><h3><a href="#">고객지원<span>+</span></a></h3>
+                    <ul>
+                        <li><a href="./sub4/sub4_1.html">미디어센터</a></li>
+              
+                        <li><a href="./sub4/sub4_3.html">문의사항</a></li>
+                    </ul>
+                </li>
+     
+            </ul>
+            <div class="user_start">
+                <ul>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </div>
+            <div class="nav_sns">
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCNelWmu1puBgKPRZ2UtCWTw"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-blogger-b"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="main mix1 swiper-slide">
+                <img src="./images/mainVisualx2.jpg" alt="">
+                <div class="main_box">
+                    <dl>
+                        <dt>Global Moving Network</dt>
+                        <dd>투명하고 깨끗한 경영으로<br> 고객에게 다가가겠습니다</dd>
+                    </dl>
+                </div>
+                
+            </div>
+            <div class="main mix2 swiper-slide">
+                <img src="./images/mainVisual2x2.jpg" alt="">
+                <div class="main_box">
+                    <dl>
+                        <dt>물류에 대한 바른 생각</dt>
+                        <dd> 
+                            보다 신속하고 정확한 물류서비스를
+                            누릴 수 있도록 정직한 기업철학으로 고객의 행복을 운송합니다
+                        </dd>
+                    </dl>
+                </div>
+                
+            </div>
+            <div class="main mix3 swiper-slide">
+                <img src="./images/mainVisual3x2.jpg" alt="">
+                <div class="main_box">
+                    <dl>
+                        <dt>최상의 물류 서비스를 제공합니다.</dt>
+                        <dd>주도적 변화를 통해 도전하는 모든 분야<br> Global No.1 회사가 되겠습니다. </dd>
+                    </dl>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="swiper-pagination">
+            <ul>
+                <li>
+                    <a href="" id="btn1">01</a>
+                </li>
+                <li>
+                    <a href="" id="btn2">02</a>
+                </li>
+                <li>
+                    <a href="" id="btn3">03</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mouseScroll">
+            <span><i class="fa-solid fa-down-long"></i></span>
+        </div>
+    </div>
+
+    <article id="content">
+        <h2 class="hidden">컨텐츠영역</h2>    
+
+        <div class="cont1">
+            <h3>BUSINESS</h3>
+            <div class="container">
+                <div>
+                    <a href="./sub2/sub2.html">
+                        <img src="./images/containerx2.jpg" alt="">
+                        <span>컨테이너</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="./sub2/sub2.html#cont2">
+                        <img src="./images/bulkx2.jpg" alt="">
+                        <span>Bulk</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="./sub2/sub2.html#cont3">
+                        <img src="./images/3PLx2.jpg" alt="">
+                        <span>3PL</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="./sub2/sub2.html#cont4">
+                        <img src="./images/lmex2.jpg" alt="">
+                        <span>LME</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont2">
+            <h3>About SEBANG</h3>
+
+           <div class="gallery_swiper">
+                <ul>
+                    <li>
+                        <div class="container">
+                            <div>
+                                <img src="./images/about1x2.jpg" alt="">
+                            </div>
+                            <div>
+                                <span>
+                                    물류와 사람의 조화로운 균형을 지속적으로
+                                    연구하여 물류의 선순환을 실현하는 기업
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    세방은 앞으로도 끊임없는 혁신을 통해
+                                    더 행복한 내일을 만들어 나가는 것을
+                                    약속드립니다
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="container">
+                            <div>
+                                <img src="./images/about2x2.png" alt="">
+                            </div>
+                            <div>
+                                <span>
+                                    직원과의 약속을생명처럼 소중히 생각하고 물류의
+                                    자존심과 도덕을 성실히 지켜 나갈 것입니다.
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    임직원간 존중을 기반으로
+                                    공정한 평가와 대우를 약속하겠습니다.
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="container">
+                            <div>
+                                <img src="./images/about3x2.jpg" alt="">
+                            </div>
+                            <div>
+                                <span>
+                                    더 나은 세상을 만드는데 기여하고,
+                                    더 큰 기업가치를 창출하기 위해 노력하고
+                                    있습니다.
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    배려와 나눔의식을 기반으로 
+                                    더 나은 사회를 만드는데 자발적으로 
+                                    참여하고 있습니다.
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <span class="onpage"></span>
+           </div>
+
+            <span class="cont2_more">
+                <a href="#">more</a>
+            </span>
+        </div>
+
+        <div class="cont3">
+            <h3>FAQ</h3>
+            <div class="faq">  
+                <div class="hgroup">  
+                    
+                    <a class="all" href="#">모두열기 ▼</a>
+                </div> 
+                <ul>  
+                    <li class="article hide show">  
+                         <p class="q">  
+                             <a class="trigger" href="#" >Q. 3PL은 무엇인가요?</a>  
+                             <span></span>
+                         </p>  
+                         <p class="a" > 
+                            3PL이란 제3자 물류(Third Party Logistics)의 약자로, 화주가 '물류비 절감', '고객서비스 강화' 등의 목적으로 물류 영역의 전부 또는 일부를 물류전문업체에 아웃소싱하는 것을 말합니다.
+                        </p>  
+                   </li> 
+
+                   <li class="article hide">  
+                       <p class="q">  
+                           <a class="trigger" href="#" >Q. 어떤 WMS를 사용하는지 궁금합니다.</a> 
+                           <span></span> 
+                       </p>  
+                       <p class="a"> 세방이 사용하는 WMS(Warehouse Management System)는 자체 개발한 W&D 전문 통합물류정보 시스템입니다. 
+
+                       </p>  
+                   </li>
+           
+                   <li class="article hide">  
+                       <p class="q">  
+                           <a class="trigger" href="#" >Q. 물류 컨설팅을 받고 싶습니다.</a>
+                           <span></span>  
+                       </p>  
+                       <p class="a">물류 컨설팅 서비스는 영업안내 - 영업문의 페이지에 안내된 담당부서의 연락처로 문의 하실 수 있습니다.<br>
+                        <br>
+                        문의 내용을 검토 후 전문가가 귀사에 직접 방문해 물류현황 분석과 개선점을 진단해 드립니다.<br>
+                        더불어, 필요에 따라 물류컨설팅 T/F팀을 구성하여 보다 자세한 컨설팅을 제공해 드립니다.
+                       </p>  
+                   </li>
+           
+                   <li class="article hide">  
+                       <p class="q">  
+                           <a class="trigger" href="#" >Q. 3PL 물류운영 범위를 알고 싶습니다.</a> 
+                           <span></span> 
+                       </p>  
+                       <p class="a"> 세방은 납품대행 - 화물 입출고 및 보관 - 유통/가공 - 주문/출고/관리 - 온/오프라인 수배송(B2B & B2B) 등 물류의 전과정을 아우르는 통합 물류 서비스를 제공합니다. </p>  
+                   </li>
+
+                   <li class="article hide">  
+                    <p class="q">  
+                        <a class="trigger" href="#" >Q. 세방의 인프라 현황이 궁금합니다.</a> 
+                        <span></span> 
+                    </p>  
+                    <p class="a"> 세방은 수도관 대형 물류센터와 소규모 데포 자원을 보유하고 있습니다.<br> 
+                    ▶ 물류센터(4곳) : 부천, 이천, 인천, 부산<br> 
+                    ▶ 소규모 데포(7곳) : 부산, 광주, 대구, 대전, 파주, 서빙고, 의왕<br> 
+                    </p>  
+                </li>
+
+                <li class="article hide">  
+                    <p class="q">  
+                        <a class="trigger" href="#" >Q. 세방 물류서비스 만의 특장점은 무엇입니까?</a> 
+                        <span></span> 
+                    </p>  
+                    <p class="a"> 세방은 사업별 노하우 및 보유 역략을 활용하여 안정적인 물류서비스를 수행합니다.<br>
+                        당사의 특장점은 크게 4가지로 소개할 수 있습니다. <br><br>
+
+                        1. 장기간 수행으로 풍부한 의류 물류 노하우<br>
+                        2. 대형물류센터 기반의 보관 확장성 (물량 변화 대응)<br>
+                        3. 1:1 직계약 기반 안정적인 전국적 배송 네트워크<br>
+                        4. 기능별 전문가의 정확한 진단의 물류 컨설팅 서비스<br>
+                    </p>  
+                </li>
+               </ul>
+            </div>
+        </div>
+
+        <div class="cont4">
+            <h3>문의하기</h3>
+            <p>
+                궁금하신 점이 있으시면<br>
+                무엇이든 물어보세요. 담당자가<br>
+                신속하게 답변해드립니다.
+            </p>
+            <a href="#">contact</a>
+        </div>
+
+    </article>
+
+    <footer id="footerArea">
+       <img src="./images/footerLogox2.png" alt="">
+       <div class="footerBox">
+            <p class="copyright">&copy;Sebang Group. All Right Reserved</p>
+            <address>서울특별시 강남구 성수로 433 세방 빌딩</address>
+            <p class="footer_tel">Tel. 02-3469-0300</p>
+            <p class="footer_fax">Fax. 02-558-3862</p>
+            <ul class="footerList">
+                <li>
+                    <a href="#">오시는 길</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+            </ul>
+            <ul class="footer_sns">
+                <li><a href="https://www.youtube.com/channel/UCNelWmu1puBgKPRZ2UtCWTw"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-blogger-b"></i></a></li>
+            </ul>
+            <div class="familysite">
+                <a class="arrow" href="#">Family Site</a>
+                    <ul class="aList">
+                        <li><a href="#">세방 전지</a></li>
+                        <li><a href="#">세방 익스프레스</a></li>
+                        <li><a href="#">세방 산업</a></li>
+                    </ul>
+            </div>
+       </div>
+       <a href="" class="topMove">TOP</a>
+    </footer>
+
+  </div>
+ 
+ <script src="js/jquery-1.12.4.min.js"></script>
+ <script src="js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="./js/nav.js"></script>
+ <script src="./js/faq.js"></script>
+ <script src="./js/header_hide.js"></script>
+ <script src="./js/swiper.min.js"></script>
+ <script src="./js/move.js"></script>
+ <script src="./js/about_touch.js"></script>
+ <script src="./js/family.js"></script>
+ <script src="./js/topMove.js"></script>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+    //   spaceBetween: 30,
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+ 
+ 
+
+ 
+ 
+</body>
+</html>

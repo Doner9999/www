@@ -1,0 +1,78 @@
+<?
+   session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-오시는길</title>
+
+    <link rel="shortcut icon" type="image/x-icon"  href="../favicon.ico">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content4.css">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/c76edfea85.js" crossorigin="anonymous"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=070dde08dbb177b7bf47c439acbeceeb"></script>
+    <script src="./js/content4/map.js"></script>
+</head>
+<body>
+
+        <? include "../common/sub_header.html" ?>
+
+        <div class="main">
+            <!-- 이미지 가로세로 고정비율에 가로값만 2000px로 조정 -->
+            <img src="./common/images/mainImg.jpg" alt="">
+            <h3>회사소개</h3>
+        </div>
+
+        <div class=subNav>
+            <ul>
+                <li><a href="./sub1_1.html">기업소개</a></li>
+                <li><a href="./sub1_2.html">연혁</a></li>
+                <li><a href="./sub1_3.html">조직도</a></li>
+                <li><a href="#" class="current">오시는길</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span>home</span>&nbsp;&gt;&nbsp;<span>회사소개</span>&nbsp;&gt;&nbsp;<strong>오시는길</strong>
+                </div>
+                <h2>오시는길</h2>
+            </div>
+            <div class="contentArea">
+                <div class="contentAreaMap">
+                    <div id="map">
+
+                    </div>
+                </div>
+                <div class="mapMent">
+                    <dl>
+                        <dt><i class="fa-solid fa-location-dot"></i>ADDRESS</dt>
+                        <dd>서울특별시 강남구 선릉로 433 (역삼동, 세방빌딩)</dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa-solid fa-phone"></i>PHONE</dt>
+                        <dd>02-3469-0300</dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa-solid fa-print"></i>FAX</dt>
+                        <dd>02-558-3862</dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa-solid fa-train-subway"></i>SUB</dt>
+                        <dd>수인분당선 선릉역 3번출구 바로 앞</dd>
+                    </dl>
+                </div>
+            </div>
+        </article>
+        <? include "../common/sub_footer.html" ?>
+
+
+</body>
+</html>

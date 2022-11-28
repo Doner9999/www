@@ -1,0 +1,210 @@
+/*sub1_1 content 영역 css*/
+#content .tabArea{
+    width: 100%;
+    margin-top: 50px;
+}
+#content .tabArea ul{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'a b'
+        'c d'
+    ;
+ 
+}
+#content .tabArea ul li{
+    box-sizing: border-box;
+    border: 1px solid rgba(1, 52, 128, .5);
+    text-align: center;
+    height: 50px;
+}
+#content .tabArea ul li a{
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+}
+#content .tabArea ul li:nth-child(1){
+    grid-area: a;
+    height: 50px;
+}
+#content .tabArea ul li:nth-child(2){
+    grid-area: b;
+    height: 50px;
+    border-collapse: collapse;
+}
+#content .tabArea ul li:nth-child(3){
+    grid-area: c;
+    height: 50px;
+}
+#content .tabArea ul li:nth-child(4){
+    grid-area: d;
+    height: 50px;
+    border-collapse: collapse;
+}
+#content h3{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+#content .cont1{
+    margin-top: 80px;
+    width: 100%;
+    height: 650px;
+    background: url(../images/cont1/container1x2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+#content .cont1 .cont1_box{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+#content .cont1 .cont1_box img{
+    width: 100%;
+    position: relative; top: 50px;
+}
+#content .cont1 .cont1_box dl{
+    color: #fff;
+    margin-top: 100px;
+}
+#content .cont1 .cont1_box dl dt::before{
+    content: 'CONTAINER BUSINESS';
+    display: block;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .3em;
+    position: absolute; top: -18px; left: 0;
+    font-weight: 300;
+}
+#content .cont1 .cont1_box dl dt{
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+#content .cont1 .cont1_box dl dd{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/** 컨텐트 2 **/
+#content .cont2{
+    width: 100%;
+    height: 600px;
+    background: url(../images/cont1/bulk1x2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+#content .cont2 .cont2_box{
+    width: 90%;
+    margin: 0 auto;
+}
+#content .cont2 .cont2_box img{
+    width: 100%;
+    position: relative; top: 50px;
+}
+#content .cont2 .cont2_box dl{
+    color: #fff;
+    margin-top: 100px;
+}
+#content .cont2 .cont2_box dl dt::before{
+    content: 'BULK BUSINESS';
+    display: block;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .3em;
+    position: absolute; top: -18px; left: 0;
+    font-weight: 300;
+}
+#content .cont2 .cont2_box dl dt{
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+#content .cont2 .cont2_box dl dd{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/***컨텐츠 3 영역**/
+#content .cont3{
+    width: 100%;
+    height: 600px;
+    background: url(../images/cont1/3PL1x2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+#content .cont3 .cont3_box{
+    width: 90%;
+    margin: 0 auto;
+}
+#content .cont3 .cont3_box img{
+    width: 100%;
+    position: relative; top: 50px;
+}
+#content .cont3 .cont3_box dl{
+    color: #fff;
+    margin-top: 100px;
+}
+#content .cont3 .cont3_box dl dt::before{
+    content: '3PL BUSINESS';
+    display: block;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .3em;
+    position: absolute; top: -18px; left: 0;
+    font-weight: 300;
+}
+#content .cont3 .cont3_box dl dt{
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+#content .cont3 .cont3_box dl dd{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/**컨텐츠4 영역**/
+#content .cont4{
+    width: 100%;
+    height: 700px;
+    background: url(../images/cont1/LME1x2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+#content .cont4 .cont4_box{
+    width: 90%;
+    margin: 0 auto;
+}
+#content .cont4 .cont4_box img{
+    width: 100%;
+    position: relative; top: 50px;
+}
+
+#content .cont4 .cont4_box dl{
+    color: #fff;
+    margin-top: 100px;
+}
+#content .cont4 .cont4_box dl dt::before{
+    content: 'LME BUSINESS';
+    display: block;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .3em;
+    position: absolute; top: -18px; left: 0;
+    font-weight: 300;
+}
+#content .cont4 .cont4_box dl dt{
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+#content .cont4 .cont4_box dl dd{
+    font-weight: 300;
+    text-align: justify;
+}

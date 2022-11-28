@@ -1,0 +1,363 @@
+/* start title */
+#wrap .videoBox img{
+    filter: brightness(.8) blur(3px);
+}
+#wrap .videoBox h2{
+    font-size: 5em;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#wrap .videoBox h2 span{
+    margin-left: 10px;
+}
+#wrap .videoBox h2 span:nth-child(1){
+    display: block;
+    position: absolute; top: 30px; left: -80px;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(2){
+    display: block;
+    position: absolute; top: -30px; left: -45px;
+    opacity: 0;
+    
+}
+#wrap .videoBox h2 span:nth-child(3){
+    display: block;
+    position: absolute; top: 8px; left: -10px;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(4){
+    display: block;
+    position: absolute; top: -58px; left: 25px;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(5){
+    display: block;
+    position: absolute; top: 7px; left: 60px;
+    opacity: 0;
+}
+/* about content */
+#content{
+    background: rgba(0, 0, 0, .8);
+}
+#content .content_box{
+   
+}
+
+/*origin*/
+#content .content_box .origin{
+    padding-top: 70px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#content .content_box .origin h3{
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#content .content_box .origin ul{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+#content .content_box .origin ul li{
+    width: 100%;
+}
+#content .content_box .origin ul li img{
+    width: 100%;
+    z-index: -5;
+}
+#content .content_box .origin ul .container{
+    position: relative;
+    z-index: 10;
+}
+#content .content_box .origin ul li .card{
+   
+    backface-visibility: hidden; /*뒷면 숨기기*/
+    visibility: visible;
+    transition: 1s;
+}
+#content .content_box .origin ul li .front{
+    position: absolute;
+    transform: rotateY(0deg);
+}
+#content .content_box .origin ul li .back{
+    transform: rotateY(-180deg);
+}
+
+
+#content .content_box .origin ul li:nth-child(2){
+    margin-top: 50px;
+}
+#content .content_box .origin ul li:nth-child(4){
+    margin-top: 50px;
+    grid-column: 1/4;
+    font-size: 1.5em;
+    text-align: justify;
+}
+#content .content_box .origin ul .container:hover .front{
+    transform: rotateY(180deg); /*y축을 기준으로 180도까지회전*/
+}
+   
+#content .content_box .origin ul .container:hover .back{
+transform: rotateY(0deg);/*y축을 기준으로 0도 까지회전*/
+}
+
+
+
+
+/* Behind */
+#content .content_box .behind{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+#content .content_box .behind h3{
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#content .content_box .behind ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+#content .content_box .behind ul li{
+    
+}
+#content .content_box .behind .behind_list{
+    position: relative;
+}
+#content .content_box .behind ul li img{
+   
+    width: 100%;
+}
+#content .content_box .behind ul .behind_video{
+    position: relative;
+}
+#content .content_box .behind ul .behind_video::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/play_btn_off.png) 50% 50% no-repeat;
+    background-size: 100% auto;
+    position: absolute; top: 50%; left: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+    transition: background .3s;
+}
+#content .content_box .behind ul .behind_video:hover::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/play_btn_on.png) 50% 50% no-repeat;
+    background-size: 100% auto;
+    position: absolute; top: 50%; left: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+}
+#content .content_box .behind ul li:nth-child(1){
+    grid-column: 1/4;
+    position: relative;
+}
+
+#content .content_box .behind ul li:nth-child(1) a img{
+    position: relative;
+}
+#content .content_box .behind ul li:nth-child(1) a{
+    display: block;
+    /* z-index: 50; */
+}
+
+
+
+ /*behind popup*/
+#content .content_box .behind .behind_list .popup{
+    width: 100%;
+    height: 100%;
+    position: absolute; top: 0; left: 0;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+#content .content_box .behind .behind_list .popup .video_area{
+    width: 70%;
+    height: 60%;
+    
+}
+#content .content_box .behind .behind_list .popup .video_area iframe{
+    width: 100%;
+    height: 100%;
+}
+#content .content_box .behind .behind_list .popup a{
+    position: absolute; top: 5%; right: 5%;
+    text-indent: -999999px;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+#content .content_box .behind .behind_list .popup a span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: none;
+    position: relative; 
+}
+#content .content_box .behind .behind_list .popup a span::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute; top: -5px;
+    transform: rotate(-45deg);
+}
+#content .content_box .behind .behind_list .popup a span::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute; top: -5px;
+    transform: rotate(45deg);
+}
+
+
+/* NOMINATE */
+#content .content_box .nominate{
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+#content .content_box .nominate .nominate_left{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    height: 686px;
+    background: url(../images/img_10.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#content .content_box .nominate .nominate_right{
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    height: 686px;
+}
+#content .content_box .nominate .nominate_right h3{
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#content .content_box .nominate .nominate_right p{
+    font-size: 1.3em;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* 일반 태블릿 */
+@media screen and (max-width:1024px){
+
+    /*origin*/
+    #content .content_box .origin ul li:nth-child(4){
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    #content .content_box .origin ul{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    #content .content_box .origin ul li:nth-child(2){
+        display: none;
+    }
+
+    /* behind */
+    #content .content_box .behind ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #content .content_box .nominate .nominate_right p{
+        display: -webkit-box;
+        -webkit-line-clamp: 19;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    #content .content_box .behind ul li:nth-child(2),
+    #content .content_box .behind ul li:nth-child(3){
+        display: none;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px){
+    /*ABOUT*/
+    #content .content_box .origin ul li:nth-child(1),
+    #content .content_box .origin ul li:nth-child(3){
+        display: none;
+    }
+    #content .content_box .origin ul li:nth-child(2){
+        grid-column: 1/4;
+        display: block;
+    }
+
+    /*Behind*/
+    #content .content_box .behind ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #content .content_box .behind ul li:nth-child(4){
+        display: none;
+    }
+
+    /*nomiante*/
+    #content .content_box .nominate .nominate_left{
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        height: 400px;
+        background: url(../images/img_10.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #content .content_box .nominate .nominate_right{
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        height: 400px;
+    }
+    #content .content_box .nominate .nominate_right p{
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

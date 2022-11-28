@@ -1,0 +1,221 @@
+#content .contentArea .cont1{
+  margin-bottom: 150px;
+}
+
+
+.cont1{
+  border-top: 2px solid rgba(1, 52, 128, .5);
+  border-bottom: 2px solid rgba(1, 52, 128, .5);
+  padding-top: 100px;
+}
+.cont1 a{
+  display: block;
+  height: 300px;
+  transition: background .5s ;
+}
+.cont1 a:hover{
+  background: #f7f7f7;
+}
+.cont1 dl dt{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.cont1 dl dd{
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #666;
+}
+.cont1 dl dd:last-child{
+  color: #999;
+}
+.cont1 .cont1_1{
+  margin-bottom: 200px;
+  position: relative;
+}
+.cont1 .cont1_1::after{
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 1px;
+  position: absolute; bottom: -100px; 
+  background: rgba(0, 0, 0, .2);
+}
+.cont1 .cont1_1 .cont1Img{
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  display: inline-block;
+}
+.cont1 .cont1_1 img{
+  transform: scale(1);
+  transition: all .5s;
+}
+.cont1 .cont1_1:hover img{
+  transform: scale(1.03);
+}
+.cont1 .cont1_1 dl{
+  width: 700px;
+  float: right;
+  
+  padding: 55px 0 48px 43px;
+}
+.cont1 .cont1_1 dl dt{
+  margin-bottom: 20px;
+}
+.cont1 .cont1_1 dl dd{
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/*****************************************************/
+.cont1 dl dd:last-child{
+  color: #999;
+}
+.cont1 .cont1_2{
+  margin-bottom: 200px;
+  position: relative;
+}
+.cont1 .cont1_2::after{
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 1px;
+  position: absolute; bottom: -100px; 
+  background: rgba(0, 0, 0, .2);
+}
+.cont1 .cont1_2 .cont2Img{
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  display: inline-block;
+}
+.cont1 .cont1_2 img{
+  transform: scale(1);
+  transition: all .5s;
+}
+.cont1 .cont1_2:hover img{
+  transform: scale(1.03);
+}
+.cont1 .cont1_2 dl{
+  width: 700px;
+  float: right;
+  
+  padding: 55px 0 48px 43px;
+}
+.cont1 .cont1_2 dl dt{
+  margin-bottom: 20px;
+}
+.cont1 .cont1_2 dl dd{
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/**************************************************/
+
+.cont1 .cont1_3{
+  margin-bottom: 200px;
+  position: relative;
+}
+.cont1 .cont1_3::after{
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 1px;
+  position: absolute; bottom: -100px; 
+  background: rgba(0, 0, 0, .2);
+}
+.cont1 .cont1_3 .cont3Img{
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  display: inline-block;
+}
+.cont1 .cont1_3 img{
+  transform: scale(1);
+  transition: all .5s;
+}
+.cont1 .cont1_3:hover img{
+  transform: scale(1.03);
+}
+.cont1 .cont1_3 dl{
+  width: 700px;
+  float: right;
+  
+  padding: 55px 0 48px 43px;
+}
+.cont1 .cont1_3 dl dt{
+  margin-bottom: 20px;
+}
+.cont1 .cont1_3 dl dd{
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/********************************************************/
+.cont1 .cont1_4{
+  margin-bottom: 200px;
+  position: relative;
+}
+.cont1 .cont1_4::after{
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 1px;
+  position: absolute; bottom: -100px; 
+  background: rgba(0, 0, 0, .2);
+}
+.cont1 .cont1_4 .cont4Img{
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  display: inline-block;
+}
+.cont1 .cont1_4 img{
+  transform: scale(1);
+  transition: all .5s;
+}
+.cont1 .cont1_4:hover img{
+  transform: scale(1.03);
+}
+.cont1 .cont1_4 dl{
+  width: 700px;
+  float: right;
+  
+  padding: 55px 0 48px 43px;
+}
+.cont1 .cont1_4 dl dt{
+  margin-bottom: 20px;
+}
+.cont1 .cont1_4 dl dd{
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/*******************************************************/
+.cont1 .cont1_5{
+  margin-bottom: 100px;
+  position: relative;
+}
+.cont1 .cont1_5 .cont5Img{
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  display: inline-block;
+}
+.cont1 .cont1_5 img{
+  transform: scale(1);
+  transition: all .5s;
+}
+.cont1 .cont1_5:hover img{
+  transform: scale(1.03);
+}
+.cont1 .cont1_5 dl{
+  width: 700px;
+  float: right;
+  
+  padding: 55px 0 48px 43px;
+}
+.cont1 .cont1_5 dl dt{
+  margin-bottom: 20px;
+}
+.cont1 .cont1_5 dl dd{
+  margin-bottom: 20px;
+  text-align: justify;
+}

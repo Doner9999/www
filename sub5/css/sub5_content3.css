@@ -1,0 +1,186 @@
+
+#content .contentArea .cont1 p{
+    font-weight: 500;
+    color: #666;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 150px;
+}
+#content .contentArea .cont2{
+    width: 1200px;
+    height: 500px;
+    background-image: url(../images/content3/cont3Img1.jpg);
+    position: relative;
+    margin-bottom: 200px;
+}
+#content .contentArea .cont2 p{
+    color: #fff;
+    width: 60%;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2em;
+    position: absolute; top: 100px; left: 50px;
+}
+#content .contentArea .cont3{
+    margin-bottom: 80px;
+}
+#content .contentArea .cont3::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
+#content .contentArea .cont3 div{
+    float: left;
+}
+#content .contentArea .cont3 .cont3_1{
+    margin-right: 80px;
+    position: relative;
+}
+#content .contentArea .cont3 .cont3_1 ul li{
+    float: left;
+}
+#content .contentArea .cont3 .cont3_1 ul li:first-child{
+    position: relative;
+}
+#content .contentArea .cont3 .cont3_1 ul li:first-child::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    position: absolute; top: 0px; left: 120px;
+}
+#content .contentArea .cont3 .cont3_1 ul li a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(1, 52, 128);
+    color: #fff;
+}
+#content .contentArea .cont3 .cont3_1::before{
+    content: '2022';
+    display: block;
+    position: absolute; top: -50px; left: 0;
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#content .contentArea .cont3 ul{
+
+}
+#content .contentArea .cont3 ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .contentArea .cont3 .cont3_2{
+    position: relative;
+    margin-right: 80px;
+}
+#content .contentArea .cont3 .cont3_2::before{
+    content: '2021';
+    display: block;
+    position: absolute; top: -50px; left: 0;
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#content .contentArea .cont3 .cont3_2 ul li{
+    float: left;
+}
+#content .contentArea .cont3 .cont3_2 ul li a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(1, 52, 128);
+    color: #fff;
+}
+#content .contentArea .cont3 .cont3_2 ul li:first-child{
+    position: relative;
+}
+#content .contentArea .cont3 .cont3_2 ul li:first-child::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    position: absolute; top: 0px; left: 120px;
+}
+
+#content .contentArea .cont3 .cont3_3{
+    position: relative;
+    margin-right: 80px;
+}
+#content .contentArea .cont3 .cont3_3::before{
+    content: '2020';
+    display: block;
+    position: absolute; top: -50px; left: 0;
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#content .contentArea .cont3 .cont3_3 ul li{
+    float: left;
+}
+#content .contentArea .cont3 .cont3_3 ul li a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(1, 52, 128);
+    color: #fff;
+}
+#content .contentArea .cont3 .cont3_3 ul li:first-child{
+    position: relative;
+}
+#content .contentArea .cont3 .cont3_3 ul li:first-child::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    position: absolute; top: 0px; left: 120px;
+}
+
+
+#content .contentArea .cont3 .cont3_4{
+    position: relative;
+    
+}
+#content .contentArea .cont3 .cont3_4::before{
+    content: '2019';
+    display: block;
+    position: absolute; top: -50px; left: 0;
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#content .contentArea .cont3 .cont3_4 ul li{
+    float: left;
+}
+#content .contentArea .cont3 .cont3_4 ul li a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(1, 52, 128);
+    color: #fff;
+}
+#content .contentArea .cont3 .cont3_4 ul li:first-child{
+    position: relative;
+}
+#content .contentArea .cont3 .cont3_4 ul li:first-child::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    position: absolute; top: 0px; left: 120px;
+}

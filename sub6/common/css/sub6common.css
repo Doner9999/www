@@ -1,0 +1,98 @@
+.main{
+    width: 2000px;
+    position:relative; left: 50%; top: 0; margin-left: -1000px;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.main h3{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #fff;
+    position: absolute; left: 1020px; top: 290px; margin-left: -100px;
+}
+.subNav{
+    border-bottom: 1px solid #ccc;
+}
+.subNav ul{
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.subNav ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.subNav ul li a{
+    display: block;
+    padding: 20px 0;
+    font-size: 1.2em;
+    color: #666;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.subNav ul li a:hover{
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+}
+.subNav ul li .current{
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+    position: relative;
+}
+.subNav ul li::after{
+    
+}
+.subNav ul li .current::after{
+    content: '';
+    display: block;
+    position: absolute; top: 65px; left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgb(1, 52, 128);
+}
+.subNav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#content{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+#content .titleArea{
+   position: relative;
+   overflow: hidden;
+}
+#content .titleArea .lineMap{
+    position: absolute; right: 20px; top: 30px;
+    color: rgba(0, 0, 0, .6);
+    font-weight: 300;
+}
+#content .titleArea .lineMap strong{
+    font-weight: 500;
+}
+
+#content .titleArea h2{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 200px;
+
+}
+#content .titleArea h2::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 70%;
+    background: rgb(1, 52, 128);
+    position: absolute; top: 140px; left: 590px;
+}
+#content .contentArea{}

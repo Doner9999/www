@@ -1,0 +1,67 @@
+#content .contentArea .cont1 p{
+    text-align: center;
+    color: #666;
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+#content .contentArea .cont2{
+    width: 1380px;
+    position: relative; top: 0; left: -80px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+#content .contentArea .cont2 img{
+    filter: grayscale(100%);
+    transition: all .5s;
+    transform: scale(1);
+}
+#content .contentArea .cont2 .cont2_1:hover img{
+    filter: grayscale(0);
+    transform: scale(.95);
+}
+#content .contentArea .cont2 .cont2_2:hover img{
+    filter: grayscale(0);
+    transform: scale(.95);
+}
+#content .contentArea .cont2 .cont2_3:hover img{
+    filter: grayscale(0);
+    transform: scale(.95);
+}
+#content .contentArea .cont2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .contentArea .cont2 div{
+    float: left;
+    width: 460px;
+}
+#content .contentArea .cont2 .cont2_1{
+}
+#content .contentArea .cont2 p{
+    text-align: center;
+    width: 100%;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+#content .contentArea .cont2 dl{
+    margin-top: 50px;
+}
+#content .contentArea .cont2 dl dt{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .contentArea .cont2 dl dd{
+    text-align: center;
+    width: 80%;
+    margin-left: 40px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #666;
+}
+#content .contentArea .cont2 dl dd span{
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+}

@@ -1,0 +1,166 @@
+html{
+    background: #f5f6f7;
+}
+#content {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom : 60px
+}
+#content h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#content h1 a{
+    display: block;
+    text-indent: -9999px;
+    width: 204px;
+    height: 46px;
+    background: url(../images/mainLogo2.png);
+    margin: 0 auto;
+}
+#content h2{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 2.4em;
+}
+#content table{
+    width: 600px;
+}
+#content table tr{
+    position: relative;
+    border: solid 1px #dadada;
+    width: 600px;
+    height: 60px;
+    background: #fff;
+}
+#content table tr th{
+    width: 57px;
+
+    padding-left: 2.5px
+}
+#content table td{
+    border: none;
+}
+#content table tr.far{
+    height: 50px;
+    border: none;
+}
+#content table td input{
+    width: 533px;
+    line-height: 57px;
+    border: none;
+    background: transparent;
+}
+#content table td input:focus{
+    outline: none;
+}
+#content table .idArea th{
+    background: url(../images/user.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+#content table .idArea td{
+    position: relative;
+}
+#content table .idArea td span{
+    position: absolute; top: 9px; right: 0;
+    width: 220px;
+}
+#content table .pwArea th{
+    background: url(../images/padlock.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+#content table .nickArea td{
+    position: relative;
+}
+#content table .pwArea td{
+    position: relative;
+}
+#content table .pwArea td span{
+    width: 200px;
+    position: absolute; top: 15px; right: 0;
+}
+#content table .nickArea td span{
+    width: 200px;
+    position: absolute; top: 9px; right: 0;
+}
+#content table .nameArea th{
+    background: url(../images/id-card.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+#content table .nickArea th{
+    background: url(../images/nick.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+#content .phoneArea #hp1{
+    width: 80px;
+    text-align: center;
+    height: 57px;
+    margin-right: 20px;
+    background: transparent;
+    border: 0;
+}
+#content .phoneArea #hp1:focus{
+    outline: none;
+}
+#content .phoneArea #hp2{
+    width: 140px;
+}
+#content .phoneArea #hp3{
+    width: 160px;
+}
+#content .phoneArea td input{
+    margin-left: 0;
+    margin-right: 20px;
+    text-align: center;
+}
+#content table .phoneArea th{
+    background: url(../images/phone-call.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+#content table .emailArea th{
+    background: url(../images/email.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+#content .phoneArea td input:last-child{
+    margin-right: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#content table .emailArea td input{
+  width: 200px
+}
+#content table .finishBtn{
+  background: none;
+  border:none;
+}
+#content table .finishBtn td{
+    border: none
+}
+#content table .finishBtn td a{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px
+}
+#content table .finishBtn td a:first-child{
+    background: rgb(1, 52, 128);
+    color: #fff
+}
+#content table .finishBtn td a:nth-child(2){
+    background: red;
+    color: #fff
+}
+#content table .finishBtn td{
+    padding-left: 200px
+}

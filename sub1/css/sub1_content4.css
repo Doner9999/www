@@ -1,0 +1,111 @@
+/* 오시는길 본문영역 */
+
+#content .contentArea{
+}
+
+#content .contentArea .contentAreaMap{
+    width: 1600px;
+    margin: 0 auto;    
+}
+#content .contentArea .contentAreaMap #map{
+    width: 100%;
+    height: 600px;
+    margin-left: -200px;
+    border: 1px solid rgba(3, 3, 3, .2);
+}
+#content .contentArea .mapMent{
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+#content .contentArea .mapMent dl dt i{
+    margin-right: 50px;
+    font-size: .9em;
+}
+#content .contentArea .mapMent dl{
+    margin-bottom: 50px;
+}
+#content .contentArea .mapMent dl::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .contentArea .mapMent dl dt{
+    float: left;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-left: 200px;
+    
+}
+#content .contentArea .mapMent dl dd{
+    float: right;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .6);
+    margin-right: 200px;
+    margin-top: 10px;
+}
+#content .contentArea .mapMent dl:nth-child(2) dd{
+    margin-right: 492px;
+}
+#content .contentArea .mapMent dl:nth-child(3) dd{
+    margin-right: 504px;
+}
+#content .contentArea .mapMent dl:nth-child(4) dd{
+    margin-right: 330px;
+}
+
+#content .contentArea .mapMent dl:nth-child(1){
+}
+#content .contentArea .mapMent dl:nth-child(1) dt{
+    position: relative;
+}
+#content .contentArea .mapMent dl:nth-child(2) dt{
+    position: relative;
+}
+#content .contentArea .mapMent dl:nth-child(3) dt{
+    position: relative;
+}
+#content .contentArea .mapMent dl:nth-child(4) dt{
+    position: relative;
+}
+#content .contentArea .mapMent dl:nth-child(1) dt::before{
+    content: '';
+    display: block;
+    position: absolute; top: -20px; left: -400px;
+    width: 1600px;
+    height: 1px;
+    background: #666;
+}
+#content .contentArea .mapMent dl:nth-child(4) dt::after{
+    content: '';
+    display: block;
+    position: absolute; top: 80px; left: -400px;
+    width: 1600px;
+    height: 1px;
+    background: #666;
+}
+
+#content .contentArea .mapMent dl:nth-child(1) dt::after{
+    content: '';
+    display: block;
+    position: absolute; top: 80px; left: -400px;
+    width: 1600px;
+    height: 1px;
+    background: #efefef;
+}
+#content .contentArea .mapMent dl:nth-child(2) dt::after{
+    content: '';
+    display: block;
+    position: absolute; top: 80px; left: -400px;
+    width: 1600px;
+    height: 1px;
+    background: #efefef;
+}
+#content .contentArea .mapMent dl:nth-child(3) dt::after{
+    content: '';
+    display: block;
+    position: absolute; top: 80px; left: -400px;
+    width: 1600px;
+    height: 1px;
+    background: #efefef;
+}

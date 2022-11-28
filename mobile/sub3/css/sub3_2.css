@@ -1,0 +1,296 @@
+/*sub3_2 content css*/
+
+/*cont1*/
+#content .cont1{
+    margin-bottom: 20px;
+}
+#content .cont1 h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+#content .cont1 p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+#content .cont1 img{
+    width: 100%;
+}
+
+/*cont2*/
+#content .cont2{
+    position: relative;
+    margin-bottom: 30px;
+}
+#content .cont2 p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+#content .cont2 .cont2list{
+    width: 100%;
+}
+#content .cont2 .cont2list .container1{
+    display: flex;
+    flex-wrap: wrap;
+}
+#content .cont2 .cont2list .container1 li{
+    width: 50%;
+    text-align: center;
+    height: 200px;
+}
+#content .cont2 .cont2list .container1 li a img{
+    width: 100%;
+    margin: auto;
+}
+#content .cont2 .cont2list .container1 li a{
+    display: block;
+    width: 100%;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 200px;
+}
+#content .cont2 .cont2list .container1 .item01 a{
+    background-image: url(../images/cont2/cont2Img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#content .cont2 .cont2list .container1 .item02 a{
+    background-image: url(../images/cont2/cont2Img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#content .cont2 .cont2list .container1 .item03 a{
+    background-image: url(../images/cont2/cont2Img4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#content .cont2 .cont2list .container1 .item04 a{
+ background: #333;
+ background-image: url(../images/cont2/cont2Img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*총 팝업*/
+#content .cont2 .cont2list .popup1,
+#content .cont2 .cont2list .popup2,
+#content .cont2 .cont2list .popup3,
+#content .cont2 .cont2list .popup4{
+    display: none;
+}
+#content .cont2 .cont2list .popup .popupBox{
+    padding-top: 10px;
+}
+
+/*팝업1*/
+#content .cont2 .cont2list .popup1{
+    width: 80%;
+    height: 80%;
+    position: absolute; top: 17%; left: 10%;
+    background: #fff;
+    z-index: 10;
+}
+#content .cont2 .cont2list .popup1 img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#content .cont2 .cont2list .popup1 ul{
+    text-align: center;
+}
+#content .cont2 .cont2list .popup1 ul li{
+    margin-bottom: 8px;
+}
+#content .cont2 .cont2list .popup1 .popup_end{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute; top: 5px; right: 5px;
+}
+#content .cont2 .cont2list .popup1 .popup_end span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+#content .cont2 .cont2list .popup1 .popup_end span::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(45deg);
+}
+#content .cont2 .cont2list .popup1 .popup_end span::after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(-45deg);
+}
+
+/*팝업 2*/
+#content .cont2 .cont2list .popup2{
+    width: 80%;
+    height: 80%;
+    position: absolute; top: 17%; left: 10%;
+    background: #fff;
+    z-index: 10;
+}
+#content .cont2 .cont2list .popup2 img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#content .cont2 .cont2list .popup2 ul{
+    text-align: center;
+}
+#content .cont2 .cont2list .popup2 ul li{
+    margin-bottom: 8px;
+}
+#content .cont2 .cont2list .popup2 .popup_end{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute; top: 5px; right: 5px;
+}
+#content .cont2 .cont2list .popup2 .popup_end span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+#content .cont2 .cont2list .popup2 .popup_end span::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(45deg);
+}
+#content .cont2 .cont2list .popup2 .popup_end span::after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(-45deg);
+}
+
+/*팝업 3*/
+#content .cont2 .cont2list .popup3{
+    width: 80%;
+    height: 80%;
+    position: absolute; top: 17%; left: 10%;
+    background: #fff;
+    z-index: 10;
+}
+#content .cont2 .cont2list .popup3 img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#content .cont2 .cont2list .popup3 ul{
+    text-align: center;
+}
+#content .cont2 .cont2list .popup3 ul li{
+    margin-bottom: 8px;
+}
+#content .cont2 .cont2list .popup3 .popup_end{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute; top: 5px; right: 5px;
+}
+#content .cont2 .cont2list .popup3 .popup_end span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+#content .cont2 .cont2list .popup3 .popup_end span::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(45deg);
+}
+#content .cont2 .cont2list .popup3 .popup_end span::after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(-45deg);
+}
+
+/*팝업 4*/
+#content .cont2 .cont2list .popup4{
+    width: 80%;
+    height: 80%;
+    position: absolute; top: 17%; left: 10%;
+    background: #fff;
+    z-index: 10;
+}
+#content .cont2 .cont2list .popup4 img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#content .cont2 .cont2list .popup4 ul{
+    text-align: center;
+}
+#content .cont2 .cont2list .popup4 ul li{
+    margin-bottom: 8px;
+}
+#content .cont2 .cont2list .popup4 .popup_end{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute; top: 5px; right: 5px;
+}
+#content .cont2 .cont2list .popup4 .popup_end span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+#content .cont2 .cont2list .popup4 .popup_end span::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(45deg);
+}
+#content .cont2 .cont2list .popup4 .popup_end span::after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute; 
+    background: #333;
+    transform: rotate(-45deg);
+}

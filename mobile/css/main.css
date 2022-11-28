@@ -1,0 +1,421 @@
+/* CSS Document */
+.main{
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.main img{
+    width: 100%;
+    filter: grayscale(.1);
+}
+.main .main_box{
+    width: 88%;
+    margin: 0 auto;
+    height: 122px;
+    position: absolute; top: 30%; left: 50%;
+    margin-left: -44%;
+}
+
+.main .main_box dl{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main .main_box dl dt{
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #fff;
+}
+.main .main_box dl dd{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #fff;
+}
+.main .main_box ul{
+    overflow: hidden;
+   position: absolute; bottom: -35%; left: 50%;
+   margin-left: -52px;
+}
+.main .main_box ul li{
+    float: left;
+    margin-right: 25px;
+    color: #fff;
+    font-weight: 500;
+    
+}
+.main .main_box ul li:last-child{
+    margin-right:0;
+}
+.main .main_box ul li a{
+    color: #fff;
+    opacity: .5;
+}
+.main .main_box ul li a.on{
+    font-weight: 700;
+    color: #fff;
+    opacity: 1;
+}
+.swiper-container .swiper-pagination{
+    top: 50%;
+}
+.swiper-container{
+    position: relative;
+}
+.swiper-container .mouseScroll{
+    height: 25px;
+    width: 26px;
+    
+    position: relative; top: -250px; left: 50%;
+    margin-left: -18px;
+    border-radius: 20px;
+    z-index: 50;
+}
+.swiper-container .mouseScroll::after{
+    content: 'SCROLL';
+    display: block;
+    color: rgba(255, 255, 255,.7);
+    position: absolute; bottom: -35px; left: -14px;
+    font-weight: 300;
+}
+.swiper-container .mouseScroll span{
+    height: 4px;
+    width: 4px;
+    
+    position: absolute; bottom: 15px; left: 13px;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-name: scrollDown;
+    color: rgba(255, 255, 255, .7);
+}
+@keyframes scrollDown{
+    /* from{bottom:40px}
+    to{bottom: 5px} */
+    0%{
+        bottom: 40px;
+    }
+    
+  
+
+    100%{
+        bottom: 5px;
+        height: 4px;
+    }
+}
+
+
+
+/*************************************************/
+.swiper_slide{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+
+/***********************************************/
+
+/*컨텐츠 영역*/
+
+/*컨텐츠 1*/
+
+#content .cont1{
+    margin-bottom: 40px;
+}
+#content .cont1 h3{
+    margin-left: 3%;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .cont1 .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'a b'
+        'c d'
+    ;
+}
+#content .cont1 .container div:nth-child(1){
+    grid-area: a;
+}
+#content .cont1 .container div:nth-child(1) img{
+    width: 100%;
+}
+#content .cont1 .container div:nth-child(2){
+    grid-area: b;
+    
+}
+#content .cont1 .container div:nth-child(2) img{
+    width: 100%;
+}
+#content .cont1 .container div:nth-child(3){
+    grid-area: c;
+    
+}
+#content .cont1 .container div:nth-child(3) img{
+    width: 100%;
+}
+#content .cont1 .container div:nth-child(4){
+    grid-area: d;
+   
+}
+#content .cont1 .container div:nth-child(4) img{
+    width: 100%;
+}
+#content .cont1 .container div{
+    position: relative;
+    
+}
+#content .cont1 .container div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#content .cont1 .container div span{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    position: absolute; bottom: 15px; left: 50%;
+    margin-left: -20px;
+
+}
+#content .cont1 .container div:nth-child(1) span{
+    margin-left: -35px;
+}
+
+/*컨텐츠2*/
+#content .cont2{
+    position: relative;
+    margin-bottom: 40px;
+    height: 210px;
+}
+#content .cont2 h3{
+    margin-left: 3%;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .cont2 .gallery_swiper ul{
+    width: 300%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+#content .cont2 .gallery_swiper ul li{
+    /* float: left; */
+    width: 100%;
+    text-align: justify;
+}
+#content .cont2 .gallery_swiper .container{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-auto-rows: auto;
+    width: 98%;
+    grid-template-areas: 
+        'a b b'
+        'a c c'
+    ;
+    grid-gap: 1em;
+    padding-right: 2%;
+    height: 210px;
+}
+#content .cont2 .gallery_swiper .container div:nth-child(1){
+    grid-area: a;
+    height: 100%;
+    position: relative;
+}
+#content .cont2 .gallery_swiper .container div:nth-child(2)::after{
+    content: '';
+    display: block;
+    background: rgb(1, 52, 128);
+    width: 40px;
+    height: 4px;
+    position: absolute; bottom: -1%; left: 0;
+}
+#content .cont2 .gallery_swiper .container div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+
+}
+#content .cont2 .gallery_swiper .container div:nth-child(2){
+    grid-area: b;
+    text-align: justify;
+    font-size: 1em;
+    font-weight: 700;
+    position: relative;
+}
+#content .cont2 .gallery_swiper .container div:nth-child(3){
+    grid-area: c;
+    text-align: justify;
+    color: #666;
+}
+#content .cont2_more{
+    position: absolute; top: 3px; right: 5%;
+}
+#content .cont2_more a{
+    font-weight: 700;
+    color: #666;
+}
+#content .cont2 .gallery_swiper .onpage{
+    color: #666;
+    font-weight: 1.1em;
+    position: absolute; right: 51%; bottom: -75px;
+}
+#content .cont2 .gallery_swiper .onpage::after{
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 14px;
+    transform: rotate(115deg);
+}
+#content .cont2 .gallery_swiper .onpage::before{
+    content: '3';
+    display: block;
+    color: rgba(0, 0, 0, .5);
+    position: absolute; right: -18px; top: 5px;
+}
+
+/*컨텐츠3*/
+#content .cont3 h3{
+    margin-left: 3%;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .cont3{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 96%;
+    padding: 0 2% 0 2%;
+}
+#content .cont3 .faq{
+    width:100%; 
+    
+    /* font-size:12px */
+}  
+#content .cont3 .faq .hgroup{
+    position:relative;
+    margin:0 0 10px 0;
+}
+#content .cont3 .faq .hgroup .all{
+    position:absolute; top:-45px; right: 2%; 
+    font-size: .8em;
+    color:#666; 
+    text-decoration:none;
+}  
+#content .cont3 .faq ul{
+    margin:0;padding:0;list-style:none;
+}  
+#content .cont3 .faq .article{
+    margin-bottom: 10px;
+    width: 98%;
+    margin: 10px auto;
+    background: rgba(1, 52, 128, .1);
+    border-radius: 10px;
+}
+#content .cont3 .faq .q{
+    margin:0;
+    
+    position: relative;
+    
+}  
+#content .cont3 .faq .q a.trigger{
+    display:block;
+    padding:10px 15px;
+    color:#666;
+    text-align:left;
+    text-decoration:none ;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+}  
+#content .cont3 .faq .hide .q a.trigger{
+    font-weight:normal;
+    background:none;
+    width: 100%;
+}  
+
+#content .cont3 .faq .q span{
+    display: block; 
+    position: absolute; right: 2%; top:22px
+} 
+#content .cont3 .faq .a{
+    margin:0;
+    padding:10px 15px;
+    line-height:1.5;
+    padding-bottom:10px; 
+    margin-top:0px; 
+    margin-bottom:0px; 
+    padding-top:10px; 
+    display: none;
+    width: 80%;
+    margin-left: 40px;
+    position: relative;
+    font-weight: 300;
+    
+} 
+#content .cont3 .faq .a::before{
+    content: 'A.';
+    display: block;
+    position: absolute; top: 9px; left: -10px;
+    font-size: 1.1em;
+}
+#content .cont3 .faq .article.on .q{
+    
+}
+
+/******컨텐츠4********/
+#content .cont4{
+    width: 100%;
+    height: 363px;
+    background: url(../images/contactx2.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+}
+#content .cont4 h3{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    position: absolute; top: 45px;  left: 50%;
+    margin-left: -40px;
+}
+#content .cont4 p{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #fff;
+    position: absolute; top: 120px;  left: 50%;
+    margin-left: -110px;
+}
+#content .cont4 a{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #fff;
+    position: absolute; top: 240px;  left: 50%;
+    margin-left: -55px;
+    letter-spacing: .1em;
+    display: block;
+    border: 1px solid #fff;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+}

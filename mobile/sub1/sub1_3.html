@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>회사소개-오시는 길</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="./common/css/sub1common.css">
+<link rel="stylesheet" href="./css/sub1_3.css">
+
+<script src="https://kit.fontawesome.com/c76edfea85.js" crossorigin="anonymous"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=070dde08dbb177b7bf47c439acbeceeb"></script>
+<script src="./common/js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+ 
+    <div id="wrap">
+        <header id="headerArea" >
+            <div class="headerInner">
+                <h1><a href="../index.html">세방 로고</a></h1>
+                <a href="#" class="nav_open">
+                    네비게이션열기<span></span>
+                </a>
+            </div>
+            
+            <nav id="gnb">
+               <h2 class="hidden">네비게이션메뉴</h2>
+               <ul class="mainMenu">  
+                    <li class="depth1"><h3><a href="#">회사소개<span>+</span></a></h3>
+                        <ul>
+                            <li><a href="./sub1_1.html">기업소개</a></li>
+                            <li><a href="./sub1_2.html">연혁</a></li>
+                            <li><a href="./sub1_3.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="../sub2/sub2.html">사업영역<span>+</span></a></h3>
+                 
+                    </li>
+                    <li class="depth1"><h3><a href="#">경영전략<span>+</span></a></h3>
+                        <ul>
+                            <li><a href="../sub3/sub3_1.html">경영이념</a></li>
+                            <li><a href="../sub3/sub3_2.html">윤리경영</a></li>
+                            <li><a href="../sub3/sub3_3.html">지속가능경영</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><h3><a href="#">고객지원<span>+</span></a></h3>
+                        <ul>
+                            <li><a href="../sub4/sub4_1.html">미디어센터</a></li>
+           
+                            <li><a href="../sub4/sub4_3.html">문의사항</a></li>
+                        </ul>
+                    </li>
+         
+                </ul>
+                <div class="user_start">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                    </ul>
+                </div>
+                <div class="nav_sns">
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCNelWmu1puBgKPRZ2UtCWTw"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-blogger-b"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+
+        <div class="main">
+           <h3>회사소개</h3>
+        </div>
+
+        <div class="subNav">
+            <ul class="container">
+                <li  class="home">
+                    <a href="../index.html"><i class="fa-sharp fa-solid fa-house"></i></a>
+                    
+                </li>
+                <li class="subNav1_1">
+                    <a href="#" class="opener">회사소개</a>
+                    <ul class="subNav1_2">
+                        <li><a href="../sub1/sub1_1.html">회사소개</a></li>
+                        <li><a href="../sub2/sub2.html">사업영역</a></li>
+                        <li><a href="../sub3/sub3_1.html">경영전략</a></li>
+                        <li><a href="../sub4/sub4_1.html">고객지원</a></li>
+                    </ul>
+                    <img src="../common/images/right-arrow.png" alt="">
+                </li>
+                <li class="subNav2_1">
+                    <a href="#" class="opener">오시는 길</a>
+                    <ul class="subNav2_2">
+                        <li><a href="./sub1_1.html" class="link1">기업소개</a></li>
+                        <li><a href="./sub1_2.html" class="link2">연혁</a></li>
+                        <li><a href="./sub1_3.html" class="link3">오시는 길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="tabs">
+                <div class="tab_menu">
+                    <div class="cont1">
+                        <h3>오시는 길</h3>
+                        <div class="tabs">
+                            <ul>
+                                <li><a href="#" class="tab tab1">서울</a></li>
+                                <li><a href="#" class="tab tab2">부산</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contlist">
+                    <div class="cont2">
+                        <div id="map1"></div>
+                        <div class="cont2_ment">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-location-dot"></i>ADDRESS</dt>
+                                        <dd>서울특별시 강남구 선릉로 433 (역삼동, 세방빌딩)</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-phone"></i>PHONE</dt>
+                                        <dd>02-3469-0300</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-print"></i>FAX</dt>
+                                        <dd>02-558-3862</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-train-subway"></i>SUB</dt>
+                                        <dd>수인분당선 선릉역 3번출구 바로 앞</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contlist">
+                    <div class="cont3">
+                        <div id="map2"></div>
+                        <div class="cont3_ment">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-location-dot"></i>ADDRESS</dt>
+                                        <dd>부산광역시 남구 감만동 624</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-phone"></i>PHONE</dt>
+                                        <dd>02-3469-0300</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-print"></i>FAX</dt>
+                                        <dd>02-558-3862</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-train-subway"></i>SUB</dt>
+                                        <dd>망미역 3번출구 바로 앞</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer id="footerArea">
+            <img src="../images/footerLogox2.png" alt="">
+            <div class="footerBox">
+                 <p class="copyright">&copy;Sebang Group. All Right Reserved</p>
+                 <address>서울특별시 강남구 성수로 433 세방 빌딩</address>
+                 <p class="footer_tel">Tel. 02-3469-0300</p>
+                 <p class="footer_fax">Fax. 02-558-3862</p>
+                 <ul class="footerList">
+                     <li>
+                         <a href="#">오시는 길</a>
+                     </li>
+                     <li>
+                         <a href="#">개인정보처리방침</a>
+                     </li>
+                 </ul>
+                 <ul class="footer_sns">
+                     <li><a href="https://www.youtube.com/channel/UCNelWmu1puBgKPRZ2UtCWTw"><i class="fa-brands fa-youtube"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-blogger-b"></i></a></li>
+                 </ul>
+                 <div class="familysite">
+                     <a class="arrow" href="#">Family Site</a>
+                         <ul class="aList">
+                             <li><a href="#">세방 전지</a></li>
+                             <li><a href="#">세방 익스프레스</a></li>
+                             <li><a href="#">세방 산업</a></li>
+                         </ul>
+                 </div>
+            </div>
+            <a href="" class="topMove">TOP</a>
+         </footer>
+
+    </div>
+
+    <script src="./common/js/jquery-1.12.4.min.js"></script>
+    <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./common/js/family.js"></script>
+    <script src="./common/js/header_hide.js"></script>
+    <script src="./common/js/nav.js"></script>
+    <script src="./common/js/subNav_tab.js"></script>
+    <script src="./js/cont3/tab.js"></script>
+    <script src="./common/js/topMove.js"></script>
+
+</body>
+</html>

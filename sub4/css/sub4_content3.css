@@ -1,0 +1,312 @@
+
+
+#content .contentArea .cont1 p{
+    text-align: left;
+    color: #333;
+    font-size: 2em;
+    line-height: 1.6em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+#content .contentArea .cont1 p span{
+    color: rgb(1, 52, 128);
+}
+#contactForm{
+    width: 1200px;
+    /* border: 1px soli red; */
+}
+#contactForm .unameArea{
+    width: 49%;
+    float: left;
+}
+#contactForm .unameArea dl{
+    position: relative;
+    height: 70px;
+    background: #f5f5f5;
+}
+#contactForm .unameArea dl dt{
+    height: 70px;
+}
+#contactForm .unameArea dl dt label{
+    line-height: 70px;
+    padding-left: 17px;
+    color: #333;
+}
+#contactForm .unameArea dl dd{
+    position: absolute; top: 0; left: 80px;
+    height: 70px;
+    width: 100%;
+    color: #333;
+}
+#contactForm .unameArea dl dd input{
+    line-height: 68px;
+    width: 490px;
+    border: none;
+    background: #f5f5f5;
+    z-index: 500;
+}
+#contactForm .unameArea dl dd input:focus{
+    outline: none;
+}
+#contactForm .unameArea dl dd input:focus::placeholder{
+    color: #333;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	 -webkit-transition: background-color 9999s ease-out;
+    color: #333;}
+
+#contactForm .phone{
+    width: 49%;
+    float: right;
+}
+#contactForm .phone::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#contactForm .phone dl{
+    position: relative;
+    height: 70px;
+    background: #f5f5f5;
+}
+#contactForm .phone dl dt{
+    height: 70px;
+}
+#contactForm .phone dl dt label{
+    line-height: 70px;
+    padding-left: 17px;
+    color: #333;
+}
+#contactForm .phone dl dd{
+    position: absolute; top: 0; left: 80px;
+    height: 70px;
+    width: 100%;
+    color: #333;
+}
+#contactForm .phone dl dd input{
+    line-height: 68px;
+    width: 490px;
+    border: none;
+    background: #f5f5f5;
+    z-index: 500;
+}
+#contactForm .phone dl dd input:focus{
+    outline: none;
+}
+#contactForm .phone dl dd input:focus::placeholder{
+    color: #333;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#contactForm .email{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#contactForm .email::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#contactForm .email dl{
+    position: relative;
+    height: 70px;
+    background: #f5f5f5;
+}
+#contactForm .email dl dt{
+    height: 70px;
+}
+#contactForm .email dl dt label{
+    line-height: 70px;
+    padding-left: 17px;
+    color: #333;
+}
+#contactForm .email dl dd{
+    position: absolute; top: 0; left: 80px;
+    height: 70px;
+    width: 100%;
+    color: #333;
+}
+#contactForm .email dl dd input{
+    line-height: 68px;
+    width: 1100px;
+    border: none;
+    background: #f5f5f5;
+    z-index: 500;
+}
+#contactForm .email dl dd input:focus{
+    outline: none;
+}
+#contactForm .email dl dd input:focus::placeholder{
+    color: #333;
+}
+
+
+#contactForm .message{
+    width: 100%;
+    margin-bottom: 50px;
+}
+#contactForm .message::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#contactForm .message dl{
+    position: relative;
+    background: #f5f5f5;
+    height: 204px;
+}
+#contactForm .message dl dt{
+    height: 70px;
+    line-height: 40px;
+}
+#contactForm .message dl dt label{
+    line-height: 45px;
+    padding-left: 17px;
+    color: #333;
+}
+#contactForm .message dl dd{
+    position: absolute; top: 0; left: 80px;
+    height: 70px;
+    width: 100%;
+    color: #333;
+}
+#contactForm .message dl dd textarea{
+    line-height: 40px;
+    width: 1100px;
+    border: none;
+    background: #f5f5f5;
+    z-index: 500;
+    resize: none;
+}
+#contactForm .message dl dd textarea:focus{
+    outline: none;
+}
+#contactForm .message dl dd textarea:focus::placeholder{
+    color: #333;
+}
+
+
+
+
+
+.formEnd::after{
+    content: '';
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}
+.finish{
+    display: flex;
+    justify-content: center
+}
+.finish button{
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    padding: 0 50px;
+    border: 0 none;
+    background: #005793;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .3s;
+}
+/**************************************************/
+#content .contentArea .cont2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#content .contentArea .cont2 .faq{
+    width:1200px; 
+    border-bottom:1px solid #ddd;
+    /* font-size:12px */
+}  
+#content .contentArea .cont2 .faq .hgroup{
+    position:relative;
+    margin:0 0 10px 0;
+}
+#content .contentArea .cont2 .faq .hgroup h2{
+    color: rgb(1, 52, 128);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 80px;
+    font-weight: 700;
+}  
+#content .contentArea .cont2 .faq .hgroup .all{
+    position:absolute; top:90px; right:10px; 
+    color:#666; 
+    text-decoration:none;
+}  
+#content .contentArea .cont2 .faq ul{
+    margin:0;padding:0;list-style:none
+}  
+#content .contentArea .cont2 .faq .q{
+    margin:0;
+    border-top:1px solid #ddd; 
+    position: relative;
+    
+}  
+#content .contentArea .cont2 .faq .q a.trigger{
+    display:block;
+    padding:10px 15px;
+    background: rgba(1, 52, 128, .1);
+    color:#666;
+    text-align:left;
+    text-decoration:none ;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+}  
+#content .contentArea .cont2 .faq .hide .q a.trigger{
+    font-weight:normal;
+    background:none;
+}  
+#content .contentArea .cont2 .faq .q a.trigger:hover,  
+#content .contentArea .cont2 .faq .q a.trigger:active,  
+#content .contentArea .cont2 .faq .q a.trigger:focus{
+    background: rgba(1, 52, 128, .1);
+    color:#000
+} 
+#content .contentArea .cont2 .faq .q span{
+    display: block; 
+    position: absolute; right: 15px; top:10px
+} 
+#content .contentArea .cont2 .faq .a{
+    margin:0;
+    padding:10px 15px;
+    line-height:1.5;
+    padding-bottom:10px; 
+    margin-top:0px; 
+    margin-bottom:0px; 
+    padding-top:10px; 
+    display: none;
+    width: 1125px;
+    margin-left: 40px;
+    position: relative;
+    font-weight: 300;
+} 
+#content .contentArea .cont2 .faq .a::before{
+    content: 'A.';
+    display: block;
+    position: absolute; top: 9px; left: -10px;
+    font-size: 1.1em;
+}
+#content .contentArea .cont2 .faq .article.on{
+    border: 2px solid rgba(1, 52, 128 );
+}
+
+
+
+
+
+
+
+
+

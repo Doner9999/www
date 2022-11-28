@@ -1,0 +1,153 @@
+.tabs .contlist {display: none;
+}
+#content .contentArea .cont1{
+    margin-bottom: 150px;
+}
+#content .contentArea .cont1 ul{
+    overflow: hidden;
+    
+}
+#content .contentArea .cont1 ul li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    color: #666;
+    font-weight: 500;
+    
+}
+#content .contentArea .cont1 ul li a{
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    transition: all .5s;
+}
+#content .contentArea .cont1 ul li .now{
+    border: 1px solid rgb(1, 52, 128);
+    font-weight: 700;
+    
+    color: rgb(1, 52, 128);
+}
+#content .contentArea .cont1 ul li a:hover{
+    color: rgb(1, 52, 128);
+    border: 1px solid rgb(1, 52, 128);
+}
+#content .contentArea .cont1 p{
+    text-align: center;
+    color: #666;
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+/********************************************/
+#content .contentArea .cont2 p{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+#content .contentArea .cont2 span{
+    color: #666;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+#content .contentArea .cont2 .cont2_1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#content .contentArea .cont2 .cont2_1 .cont2_1Img{
+    margin: 80px auto 80px auto;
+    width: 610px;
+}
+#content .contentArea .cont2 .cont2_1 .cont2_1Img img:first-child{
+    margin-right: 100px;
+}
+/********************************************/
+
+#content .contentArea .cont2 .cont2_2{
+    
+    margin-bottom: 100px; 
+}
+#content .contentArea .cont2 .cont2_2 .cont2_2Img{
+    margin: 0 auto;
+    margin: 80px auto 0 auto;
+    width: 1000px;
+}
+#content .contentArea .cont2 .cont2_2 .cont2_2Img img{
+    margin-right: 80px;
+}
+#content .contentArea .cont2 .cont2_2 .cont2_2Img img:last-child{
+    margin-right: none
+}
+
+/********************************************/
+#content .contentArea .cont2 .cont2_3 .cont2_3Img{
+    margin-top: 80px;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img1{
+    margin-bottom: 30px;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img1 img{
+    margin-right: 46px;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img1 img:last-child{
+    margin-right: none;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img2{
+    margin-bottom: 30px;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img2 img{
+    margin-right: 46px;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img2 img:last-child{
+    margin-right: none;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img3{
+    margin-bottom: 30px;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img3 img{
+    margin-right: 46px;
+}
+#content .contentArea .cont2 .cont2_3 .cont2_3Img .cont2_3Img4 img:last-child{
+    margin-right: none;
+}
+
+/**********************************************************/
+#content .contentArea .cont2 .cont2_4 .cont2_4Img1{
+    width: 900px;
+    margin: 80px auto 80px auto;
+}
+#content .contentArea .cont2 .cont2_4 .cont2_4Img1 img{
+    margin-right: 60px;
+}
+#content .contentArea .cont2 .cont2_4 .cont2_4Img1 img:last-child{
+    margin-right: none;
+}
+#content .contentArea .cont2 .cont2_4 .cont2_4Img2{
+    width: 600px;
+    margin: 80px auto 80px auto;
+}
+#content .contentArea .cont2 .cont2_4 .cont2_4Img2 img{
+    margin-right: 60px;
+}
+
+/**********************************************************/
+#content .contentArea .cont2 .cont2_5 .cont2_5Img1{
+    width: 650px;
+    margin: 80px auto 80px auto;
+}
+#content .contentArea .cont2 .cont2_5 .cont2_5Img1 img{
+    margin-right: 80px;
+}
+
+/**************************************************************/
+#content .contentArea .cont2 .cont2_6 ul li{
+    color: #666;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+    list-style-image: url(../images/content2/headImg.jpg);
+    list-style-position: inside;
+}
+#content .contentArea .cont2 .cont2_6 .cont2_6Img1{
+    width: 350px;
+    margin: 80px auto 80px auto;
+}

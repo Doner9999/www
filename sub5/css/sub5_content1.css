@@ -1,0 +1,156 @@
+#content .contentArea .cont1{
+}
+
+#content .contentArea .cont1 p{
+    font-weight: 500;
+    color: #666;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 200px;
+}
+#content .contentArea .cont2 .cont2Client{
+    position: relative;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+#content .contentArea .cont2 .cont2Client img{
+    float: right;
+    z-index: -10;
+}
+#content .contentArea .cont2 .cont2Client dl{
+    position: absolute; top: 50px; right: 140px;
+    color: #fff;
+}
+#content .contentArea .cont2 .cont2Client dl dt{
+    margin-left: 450px;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .contentArea .cont2 .cont2Client dl dd{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#content .contentArea .cont2 .cont2People{
+    position: relative;
+    margin-bottom: 80px;
+}
+#content .contentArea .cont2 .cont2People dl{
+    position: absolute; top: 50px; left: 140px;
+    color: #fff;
+}
+#content .contentArea .cont2 .cont2People dl dt{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .contentArea .cont2 .cont2People dl dd{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+#content .contentArea .cont2 .cont2Future{
+    position: relative;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+#content .contentArea .cont2 .cont2Future img{
+    float: right;
+    z-index: -10;
+}
+#content .contentArea .cont2 .cont2Future dl{
+    position: absolute; top: 50px; right: 160px;
+    color: #fff;
+}
+#content .contentArea .cont2 .cont2Future dl dt{
+    margin-left: 325px;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .contentArea .cont2 .cont2Future dl dd{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+#content .contentArea .cont2 .cont2Chellange{
+    position: relative;
+    margin-bottom: 80px;
+}
+#content .contentArea .cont2 .cont2Chellange dl{
+    position: absolute; top: 50px; left: 140px;
+    color: #fff;
+}
+#content .contentArea .cont2 .cont2Chellange dl dt{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .contentArea .cont2 .cont2Chellange dl dd{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+#content .contentArea .cont3{
+    width: 1400px;
+    height: 700px;
+}
+#content .contentArea .cont3::after{
+    display: block;
+    clear: both;
+}
+#content .contentArea .cont3 .cont3Left{
+    float: left;
+    width: 35%;
+}
+#content .contentArea .cont3 .cont3Left p{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+#content .contentArea .cont3 .cont3Right{
+    float: right;
+    width: 60%;
+   
+}
+#content .contentArea .cont3 .cont3Right dl{
+    width: 400px;
+    text-align: justify;
+}
+#content .contentArea .cont3 .cont3Right dl dt{
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#content .contentArea .cont3 .cont3Right dl dd{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #666;
+}
+#content .contentArea .cont3 .cont3Right .cont3RightTop{
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+#content .contentArea .cont3 .cont3Right .cont3RightTop::before{
+    content: '';
+    display: block;
+    width: 1040px;
+    height: 1px;
+    position: absolute; top: -50px; right: -200px;
+    background: #999;
+}
+#content .contentArea .cont3 .cont3Right .cont3RightTop dl:nth-of-type(2){
+    position: absolute; top: 0; right: 0;
+}
+#content .contentArea .cont3 .cont3Right .cont3RightBottom{
+    position: relative;
+}
+#content .contentArea .cont3 .cont3Right .cont3RightBottom::before{
+    content: '';
+    display: block;
+    width: 1040px;
+    height: 1px;
+    position: absolute; top: -50px; right: -200px;
+    background: #999;
+}
+#content .contentArea .cont3 .cont3Right .cont3RightBottom dl:nth-of-type(2){
+    position: absolute; top: 0; right: 0;
+}

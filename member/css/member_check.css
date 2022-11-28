@@ -1,0 +1,83 @@
+body{background: url(../images/back.jpg) 100% 100% no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    color: #333;
+}
+header{
+    z-index: 10;
+}
+.allcover{
+    width: 100%;
+    height: 100%;
+    position: fixed; top: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+.logo{margin: 50px auto 0; display: block; width: 204px; height: 46px;z-index: 50;}
+#content{width: 750px; margin: 30px auto;
+     padding: 70px; font-family: 'Nanum Gothic', sans-serif;
+     padding-top: 30px;
+}
+#content .sub_cont_wrap ul{
+    overflow: hidden;
+}
+#content .sub_cont_wrap ul li{
+    float: left; width: 50%;
+    text-align: center;
+}
+#content .sub_cont_wrap ul li:nth-child(1){
+    width: 25%;
+}
+#content .sub_cont_wrap ul li:nth-child(2){
+    height: 10px;
+}
+#content .sub_cont_wrap ul li .allcheck{
+    display: block;
+    width: 120px;
+    line-height: 10px;
+    margin-top: 15px;
+}
+.member_tab{padding: 30px 0;border-top: 1px solid #333;}
+.member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #333;}
+.member_tab a.on{color: #fff;border-bottom: 2px solid #333;font-weight: bold}
+.member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #fff;font-weight: bold}
+
+.join{text-align: left; position: relative;}
+.join h4{font-size: 20px;margin: 10px 0; color: #fff; text-align: left;}
+.join h3{font-size: 28px; margin-bottom: 50px; color: #fff; margin-left: 10px;}
+.join h3::before{content: ''; position: absolute; top: 4px; left: 0; width: 5px; height: 28px;
+    background: rgb(1, 52, 128);}
+.join .policy{padding: 10px; overflow-y: scroll; height: 190px; margin: 20px 0;border: 1px solid #ddd;
+    background: #fff; font-size: 14px; line-height: 1.5em;}
+.join .check{color: #fff; margin: 20px 0 60px;}
+.join .button{text-align: center;margin-top: 30px}
+.join .button .ok,.join .button button,.join .allcheck{display: inline-block;width: 200px; padding: 8px 0;border: none;background: rgb(1, 52, 128);
+    color: #fff;font-size: 14px;cursor: pointer; ;
+    margin: 0 5px;}
+.join .button .cancel{display: inline-block;width: 200px;line-height: 40px;padding: 8px 0;border: none;background:red;color: #fff;font-size: 14px;cursor: pointer; height:55px;}
+.join .allcheck{background: transparent; border: 1px solid #fff;}
+
+input[type=checkbox] + label::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 0;
+    content: '';
+    margin: 0px 15px -6px 0px;
+    border-bottom: 1px solid #fff;
+}
+.button .ok{
+    height: 40px;
+    line-height: 40px;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+input[type=checkbox]:checked + label::before {
+    background: transparent url(../images/check.png) 50% 8% no-repeat;
+
+}

@@ -1,0 +1,539 @@
+/* @charset "utf-8"; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+ html{
+    font-size: 14px;
+ }
+body {
+    font-family: 'Noto Sans KR', sans-serif; font-size: 16px;color: #333}
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+/* 헤더공통 */
+#headerArea{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    position: fixed; top: 0; 
+    z-index: 50;
+}
+#headerArea .headerInner{
+    width: 99%;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    /* border: 1px solid red; */
+}
+#headerArea .headerInner .nav_open{
+    display: block;
+    text-indent: -10000px;
+    box-sizing: border-box;
+    /* background: yellow; */
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 60px;
+    position: absolute; top: -3px; right: 10px;
+    text-align: center;
+}
+
+/*******스크롤 내렸을때 헤더영역 변화*******/
+#headerArea.on{
+    background: #fff;
+    box-shadow: 1px 0 8px 0 rgba(0, 0, 0, .2);
+}
+#headerArea.on .headerInner h1 a{
+    display: block;
+    width: 112px;
+    height: 25px;
+    text-indent: -1000px; 
+    background: url(../../common/images/navLogox2.png);
+    overflow: hidden;
+    position: absolute;top:30%; left:2%;
+    /* border: 1px solid red; */
+}
+#headerArea.on .headerInner .nav_open span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #333;
+    margin-top: 5px;
+    margin-left: 8px;
+    position: relative;
+}
+#headerArea.on .headerInner .nav_open span::after{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #333;
+    position: absolute; top: 5px;
+}
+#headerArea.on .headerInner .nav_open span::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #333;
+    position:absolute; top: -5px;
+}
+
+/***********************************************************/
+#headerArea .headerInner .nav_open span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    margin-top: 5px;
+    margin-left: 8px;
+    position: relative;
+}
+#headerArea .headerInner .nav_open span::after{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    position: absolute; top: 5px;
+}
+#headerArea .headerInner .nav_open span::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    position:absolute; top: -5px;
+}
+#headerArea .headerInner h1 a{
+    display: block;
+    width: 112px;
+    height: 25px;
+    text-indent: -1000px; 
+    background: url(../../common/images/mainLogox2.png);
+    overflow: hidden;
+    position: absolute;top:30%; left:2%;
+    /* border: 1px solid red; */
+}
+#headerArea.hide{
+    top: -60px;
+}
+
+/*on일때 열렸을 때(on open 둘다 있을때)*/
+#headerArea.open.on{
+    background: #fff;
+}
+#headerArea.open.on .headerInner h1 a{
+    display: block;
+    width: 112px;
+    height: 25px;
+    text-indent: -1000px; 
+    background: url(../../common/images/navLogox2.png);
+    overflow: hidden;
+    position: absolute;top:30%; left:2%;
+    /* border: 1px solid red; */
+}
+#headerArea.open.on h1 a{
+    color: #333;
+}
+#headerArea.open.on .nav_open span{
+    background: #333;
+    transition: all .3s;
+}
+#headerArea.open.on .nav_open span {
+    background: rgba(0,0,0,0);
+    transition: all .3s;
+}
+#headerArea.open.on .nav_open span::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: all .3s;
+    background: #333;
+}
+#headerArea.open.on .nav_open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all .3s;
+    background: #333;
+}
+#headerArea.open.on .nav_open span{
+    color: #333;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.open{
+    background: #fff;
+}
+#headerArea.open .headerInner h1 a{
+    display: block;
+    width: 112px;
+    height: 25px;
+    text-indent: -1000px; 
+    background: url(../../common/images/navLogox2.png);
+    overflow: hidden;
+    position: absolute;top:30%; left:2%;
+    /* border: 1px solid red; */
+}
+#headerArea.open h1 a{
+    color: #333;
+}
+#headerArea.open .nav_open span{
+    background: #333;
+    transition: all .3s;
+}
+#headerArea.open .nav_open span {
+    background: rgba(0,0,0,0);
+    transition: all .3s;
+}
+#headerArea.open .nav_open span::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: all .3s;
+    background: #333;
+}
+#headerArea.open .nav_open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all .3s;
+    background: #333;
+}
+#headerArea.open .nav_open span{
+    color: #333;
+}
+/* nav 영역*/
+#gnb{position: absolute; width: 100%;  right:-100%; top:50px; opacity: 0; background: #fff;z-index:20 }
+#gnb .mainMenu li{border-top:1px solid #FFF; 
+	        font-weight:bold;
+        box-sizing: border-box;
+        
+    }
+        
+#gnb .mainMenu li a{display: block; padding: 15px 0;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    padding: 2%;
+    font-weight: 700;
+    /* margin-left: 10%; */
+} 
+#gnb .mainMenu .depth1 ul li a{
+    padding-left: 15%;
+    font-weight: 500;
+    color: #666;
+}
+#gnb li h3 a::after{
+    content: '';
+    display: block;
+    position: absolute; bottom: 0; left: 2%;
+    width: 98%;
+    height: 1px;
+    background: #eee;
+}
+/* #gnb li a:hover{
+    background: rgb(1, 52, 128);
+    color: #fff;
+} */
+#gnb li ul{ display: none;
+    color: #fff;
+    
+}
+#gnb .mainMenu .depth1 ul{
+    background: rgba(1, 52, 128, .1);
+}
+#gnb .last{border-bottom:1px solid #FFF}
+
+/*로그인 회원가입*/
+#gnb .user_start{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    position: relative;
+}
+#gnb .user_start::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 80%;
+    position: absolute; top: 5px; left: 50%;
+    background: #fff;
+}
+#gnb .user_start ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+}
+#gnb .user_start ul li a{
+    line-height: 50px;
+    background: rgb(1, 52, 128);
+    display: block;
+    color: #fff;
+    font-weight: 700;
+}
+
+/*nav sns*/
+#gnb .nav_sns{
+    margin-top: 40px;
+}
+#gnb .nav_sns ul{
+    overflow: hidden;
+    width: 195px;
+    margin: 0 auto;
+}
+#gnb .nav_sns ul li{
+    float: left;
+    margin-right: 40px;
+}
+#gnb .nav_sns ul li:last-child{
+    margin-right: 0;
+}
+#gnb .nav_sns ul li a{
+    display: block;
+}
+#gnb .nav_sns ul li a i{
+    font-size: 2.5em;
+    color: rgba(0,0,0,.4);
+}
+/*main 영역*/
+
+.main{
+    height: 200px;
+    position: relative;
+    background: url(../images/mainVisualx2.png);
+    background-size: cover;
+    background-position: center;
+}
+.main h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+    position: absolute; top: 50%; left: 50%;
+    margin-left: -44px;
+}
+/*sub nav 영역*/
+.subNav{
+    width: 100%;
+    height: 60px;
+    box-shadow: 1px 0 8px 0 rgba(0, 0, 0, .2);
+    margin-bottom: 50px;
+}
+
+.subNav .container{
+    display: flex;
+}
+.subNav .home{
+    width: 15%;
+    text-align: center;
+}
+.subNav .home a{
+    display: block;
+    line-height: 60px;
+}
+.subNav .home a i{
+    font-size: 1.3em;
+}
+.subNav .container .subNav1_1{
+    width: 42.5%;
+    position: relative;
+}
+.subNav .container .subNav1_1 img{
+    position: absolute; top: 0; right: -25px;
+    width: 40px;
+    height: 60px;
+    z-index: -10;
+}
+.subNav .container .subNav1_1>a{
+    border-left: 1px solid #cecece;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+}
+.subNav .container .subNav1_1 .subNav1_2{
+    background: #fff;
+    z-index: 10;
+    position: relative; right: -1px;
+    border: 1px solid #ececec;
+}
+.subNav .container .subNav1_1 .subNav1_2 a{
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.subNav .container .subNav2_1>a{
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    border-right:1px solid #cecece;
+}
+.subNav .container .subNav2_1 .subNav2_2{
+    background: #fff;
+    z-index: 10;
+    position: relative; right: -1px;
+    border: 1px solid #ececec;
+}
+.subNav .container .subNav2_1 .subNav2_2 a{
+    display: block;
+    
+    line-height: 40px;
+    text-align: center;
+}
+
+.subNav .container .subNav2_1{
+    width: 42.5%;
+}
+
+.subNav .container .subNav1_1 .subNav1_2,
+.subNav .container .subNav2_1 .subNav2_2{
+   display: none;
+}
+
+/* 푸터공통 */
+#footerArea{
+    background: rgb(216, 216, 216);
+    padding-top: 15px;
+   position: relative
+    
+}
+#footerArea img{
+    height: 25px;
+    padding-left: 3%;
+}
+#footerArea .footerBox{
+    margin-top: 10px;
+    position: relative;
+}
+#footerArea .footerBox p{
+    padding-left: 3%;
+}
+#footerArea .footerBox .copyright{
+    color: #999;
+    margin-bottom: 15px;
+    padding-left:  3%;
+}
+#footerArea .footerBox address{
+    padding-left: 3%;
+}
+#footerArea .footerBox .footerList{
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+#footerArea .footerBox .footerList li{
+    float: left;
+    text-align: center;
+    width: 33%;
+    box-sizing: border-box;
+    height: 30px;
+}
+#footerArea .footerBox .footerList li a{
+    display: block;
+    font-weight: 700;
+    color: #666;
+    line-height: 30px;
+}
+#footerArea .footerBox .footer_sns{
+    overflow: hidden;
+    width: 160px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+#footerArea .footerBox .footer_sns li{
+    float: left;
+    margin-right: 30px;
+    
+}
+#footerArea .footerBox .footer_sns li:last-child{
+    margin-right: 0;
+}
+#footerArea .footerBox .footer_sns li a{
+    display: block;
+}
+#footerArea .footerBox .footer_sns li a i{
+    font-size: 2em;
+}
+#footerArea .footerBox .familysite .arrow{
+    font-weight: 700;
+    display: block;
+    width: 130px;
+    color: #666;
+    text-align: center;
+}
+#footerArea .footerBox .familysite{
+    position: absolute;
+    top: 53%; right: 0;
+}
+#footerArea .footerBox .familysite ul{
+    display: none;
+    position: absolute;
+    top: -120px; 
+    text-align: center;
+    width: 100%;
+}
+#footerArea .footerBox .familysite ul li{
+    /* height: 40px; */
+    width: 130px;
+    
+}
+#footerArea .footerBox .familysite ul li a{
+    height: 40px;
+    display: block;
+    line-height: 40px;
+}
+#footerArea .topMove{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgb(1, 52, 128);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    position: fixed; bottom: 15px; right: 15px;
+}
+
+
+
+
+
+
+

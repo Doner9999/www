@@ -1,0 +1,21 @@
+{
+   "region": [
+     {
+       "place" : "서울",
+       "part" : "KAM 3팀",      
+       "nname" : "김왕근",
+       "pn" : "02-3469-0345",
+       "fax":"02-558-3861",
+       "email":"ksisk0@naver.com"
+     },
+     {
+       "place" : "서울",
+       "part" : "KAM 3팀",      
+       "nname" : "김재승",
+       "pn" : "02-3469-0345",
+       "fax":"02-558-3861",
+       "email":"asd1@naver.com"
+     }
+     
+   ]
+ }

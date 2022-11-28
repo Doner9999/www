@@ -1,0 +1,122 @@
+/* html{
+    background: #f5f5f5;
+} */
+#wrap{
+    width: 500px;
+    margin:0 auto;
+    box-shadow: 5px 5px 10px 1px rgb(0 0 0 / 20%);
+    padding: 50px 30px 40px 30px;
+    margin-top: 60px
+}
+#wrap ul{
+    list-style: none;
+}
+h1{
+    text-align: center;
+    margin-bottom: 60px
+}
+h1 a{
+    display: block;
+    text-indent: -9999px;
+    width: 204px;
+    height: 46px;
+    background: url(../images/mainLogo2.png);
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px
+}
+#wrap #id_pw_input{
+}
+#wrap #id_pw_input ul li{
+    width: 90%;
+    margin-bottom: 20px;
+    height: 60px;
+    position: relative;
+}
+#wrap #id_pw_input ul li input{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    border: solid 1px #dadada;
+    border-radius: 0;
+}
+#wrap #id_pw_input ul li input:focus{
+    outline: none;
+}
+#wrap #id_pw_input ul li span{
+    display: block;
+    width: 64px;
+    height: 64px;
+
+    position: absolute; left: 0;
+}
+#wrap #id_pw_input ul li:nth-child(1) span{
+    background: url(../images/user.png) no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+#wrap #id_pw_input ul li:nth-child(2) span{
+    background: url(../images/padlock.png) no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+}
+#wrap #login_button{
+    margin-bottom: 30px
+}
+
+#wrap #login_button button{
+    display: block;
+    width: 85%;
+    height: 55px;
+    margin: 0 auto;
+    border: none;
+    background: rgb(1, 52, 128);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+#wrap #join_button{
+    text-align: center;
+    margin-bottom: 20px
+}
+#wrap #join_button a{
+    display: block;
+    text-decoration: none;
+    color: rgb(1, 52, 128);
+    font-weight: 600;
+    position: relative; left: 75px
+}
+#wrap #join_button a::before{
+    content: '회원이 아니신가요?';
+    display: block;
+    position: absolute; top: 0; left: 50px;
+    font-weight: 500;
+    color: #333;
+}
+#wrap #findArea{
+
+}
+#wrap #findArea li:first-child{
+    display: none;
+}
+#wrap #findArea li:nth-child(2){
+    padding-left: 100px;
+    text-decoration: none;
+    color: #333;
+}
+#wrap #findArea li:nth-child(2) span{
+    margin-right: 20px
+}
+#wrap #findArea li:nth-child(2) span a{
+    text-decoration: none;
+    color: #333;
+}
+#wrap #findArea li:nth-child(2) span a:hover{
+    font-weight: 700;
+    color: rgb(1, 52, 128);
+}

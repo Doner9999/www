@@ -1,0 +1,383 @@
+#wrap .videoBox img{
+    filter: brightness(.6) blur(3px);
+}
+#wrap .videoBox h2{
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+
+#wrap .videoBox h2 span{
+    margin-left: 10px;
+}
+#wrap .videoBox h2 span:nth-child(1){
+    display: block;
+    position: absolute; top: 30px; left: -110px;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(2){
+    display: block;
+    position: absolute; top: -30px; left: -80px;
+    opacity: 0;
+    
+}
+#wrap .videoBox h2 span:nth-child(3){
+    display: block;
+    position: absolute; top: 8px; left: -45px;;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(4){
+    display: block;
+    position: absolute; top: -58px; left: -11px;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(5){
+    display: block;
+    position: absolute; top: 70px; left: 5px;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(6){
+    display: block;
+    position: absolute; top: -47px; left: 35px;
+    opacity: 0;
+}
+#wrap .videoBox h2 span:nth-child(7){
+    display: block;
+    position: absolute; top: 13px; left: 67px;
+    opacity: 0;
+}
+
+
+
+/* content */
+#content{
+    background: rgba(0, 0, 0, .8);
+}
+
+/* content1 */
+#content .content_box .content1 h3{
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 120px;
+    position: relative;
+}
+#content .content_box .content1 h3::before{
+    content: 'OFFICIAL';
+    display: block;
+    color: gray;
+    position: absolute; top: 80px; left: 50%;
+    transform: translateX(-50%);
+    font-size: .8em;
+}
+#content .content_box .content1{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#content .content_box .content1 .video_list{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    perspective: 850px;
+}
+#content .content_box .content1 .video_list>ul{
+    flex-basis: 44%;
+    perspective: 800px;
+    transform: translateZ(0) rotateY(10deg);
+}
+#content .content_box .content1 .video_list>ul li{
+    margin-bottom: 50px;
+    
+}
+#content .content_box .content1 .video_list>ul li a{
+    display: block;
+}
+#content .content_box .content1 .video_list>ul li img{
+    position: relative;
+    width: 100%;
+    
+}
+#content .content_box .content1 .video_list>ul:nth-child(2){
+    margin-top: 150px;
+    transform: translateZ(0) rotateY(-10deg);
+}
+#content .content_box .content1 .video_list>ul li dl dt{
+    font-size: 2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#content .content_box .content1 .video_list>ul li dl dd{
+    font-size: 1.5em;
+}
+#content .content_box .content1 .video_list>ul li .img_box{
+    position: relative;
+}
+#content .content_box .content1 .video_list>ul li .img_box::after{
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url(../images/play_btn_off.png) 50% 50% no-repeat;
+    background-size: cover;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    transition: all .5s;
+}
+#content .content_box .content1 .video_list>ul li:hover .img_box::after{
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url(../images/play_btn_on.png) 50% 50% no-repeat;
+    background-size: cover;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
+#content .content_box .content1 .popup{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .5); top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+#content .content_box .content1 .popup .popup_area{
+    width: 90%;
+    height: 60%;
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 1);
+}
+#content .content_box .content1 .popup .popup_area .popup_close{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed; top: 5px; right: 5px;
+}
+#content .content_box .content1 .popup .popup_area .popup_close span{
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: none;
+    position: relative; top: 50%;
+}
+#content .content_box .content1 .popup .popup_area .popup_close span::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #333;
+    position: absolute; top:0; left: 0;
+    transform: rotate(-45deg);
+}
+#content .content_box .content1 .popup .popup_area .popup_close span::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #333;
+    position: absolute; top: 0; left: 0;
+    transform: rotate(45deg);
+}
+#content .content_box .content1 .popup .popup_area{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+#content .content_box .content1 .popup .popup_area .popup_area_left{
+    flex-basis: 60%;
+    height: 80%;
+}
+#content .content_box .content1 .popup .popup_area .popup_area_left iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#content .content_box .content1 .popup .popup_area .popup_area_right{
+    flex-basis: 35%;
+    height: 80%;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#content .content_box .content1 .popup .popup_area .popup_area_right dl{
+    margin-left: 15px;
+}
+#content .content_box .content1 .popup .popup_area .popup_area_right dl dt{
+    font-size: 1.6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#content .content_box .content1 .popup .popup_area .popup_area_right dl dd{
+font-size: 1.5em;
+color: #666;
+}
+
+/* content2 */
+#content .content_box .content2{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+#content .content_box .content2 h3{
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#content .content_box .content2 .content2_box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#content .content_box .content2 .content2_box .music_list{
+    flex-basis: 40%;
+}
+#content .content_box .content2 .content2_box .music_player{
+    flex-basis: 50%;    
+}
+
+#content .content_box .content2 .content2_box .music_list ul li{
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+}
+#content .content_box .content2 .content2_box .music_list ul li a{
+    display: block;
+}
+#content .content_box .content2 .content2_box .music_list ul li img{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+}
+#content .content_box .content2 .content2_box .music_list ul li p{
+    display: block;
+    width: 50%;
+    float: right;
+    text-align: center;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    position: absolute; top: 50%; right: 10%;
+    transform: translate(0, -50%);
+}
+#content .content_box .content2 .content2_box .music_player{
+    position: relative;
+}
+#content .content_box .content2 .content2_box .music_player ul{
+    position: absolute; bottom: 0; right: 10%;
+    overflow: hidden;
+}
+#content .content_box .content2 .content2_box .music_player ul li{
+   float: left;
+   margin-left: 30px;
+   font-size: 1.6em;
+}
+#content .content_box .content2 .content2_box .music_player ul li a{
+    display: block;
+}
+#content .content_box .content2 .content2_box .music_player .img_area{
+    position: relative; top: 20%;
+}
+
+#content .content_box .content2 .content2_box .music_player .img_area img:nth-child(1){
+    width: 50%;
+    position: relative;
+    z-index: 10;
+}
+#content .content_box .content2 .content2_box .music_player .img_area img:nth-child(2){
+    width: 49%;
+    position: absolute; top: 0px; left: 0%;
+    border: 1px solid #fff;
+    border-radius: 500px;
+}
+#content .content_box .content2 .content2_box .music_player .img_area img:nth-child(2).playing{
+    animation: rotate_image 6s linear infinite;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#content .content_box .content2 .content2_box .music_player p{
+    text-align: center;
+    font-size: 1.7em;
+}
+#content .content_box .content2 .content2_box .music_player .music_stop{
+    display: block;
+}
+#content .content_box .content2 .content2_box .music_player p:nth-child(1){
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:1024px){
+    #content .content1 .video_list ul li:nth-child(1){
+        display: none;
+    }
+    #content .content_box .content2 .content2_box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    #content .content_box .content2 .content2_box .music_player p:nth-child(2) {
+        text-align: center;
+        font-size: 1.7em;
+        margin-bottom: 50px;
+    }
+    #content .content_box .content2 .content2_box .music_player .img_area{
+        width: 90%;
+        margin: 0 0 40px 15%;
+    }
+    #content .content_box .content2 .content2_box .music_list ul li {
+        overflow: hidden;
+        margin-bottom: 15px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:640px){
+    #content .content1 .video_list ul:nth-child(1) li:nth-child(1){
+        display: block;
+    }
+    #content .content1 .video_list ul:nth-child(2){
+        display: none;
+    }
+    #content .content_box .content1 .video_list{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #content .content_box .content1 .video_list>ul {
+        flex-basis: 44%;
+        perspective: 800px;
+        transform: translateZ(0) rotateY(0);
+    }
+    #content .content_box .content1 .popup .popup_area .popup_area_right {
+        flex-basis: 35%;
+        height: 80%;
+        color: #333;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        display: none;
+    }
+    #content .content_box .content1 .popup .popup_area .popup_area_left {
+        flex-basis: 95%;
+        height: 80%;
+    }
+}

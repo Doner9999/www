@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer</title>
+
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./css/trailer.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="../favicon.ico">
+
+    <script src="./common/js/prefixfree.min.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+
+    <div id="wrap">
+
+        <div class="videoBox">
+            <h2>
+                <span>T</span>
+                <span>R</span>
+                <span>A</span>
+                <span>I</span>
+                <span>L</span>
+                <span>E</span>
+                <span>R</span>
+            </h2>
+            <video autoplay loop muted id="videoBG"></video>
+            <img src="./images/mainVisual.jpg" alt="imgBG" id="imgBG">
+            <a href="#" class="down"></a>
+        </div>
+
+        <header id="headerArea">
+            <div class="headerInner">
+                <h1>
+                    <a href="../index.html">배트맨로고</a>
+                </h1>
+                <a href="#" class="menu_open">메뉴열기버튼<span></span></a>
+                <nav id="gnb">
+                    <h2 class="hidden">네비게이션영역</h2> 
+                    <ul>
+                        <li><h3><a href="../sub1/about.html">ABOUT</a></h3></li>
+                        <li><h3><a href="../sub2/character.html">CHARACTER</a></h3></li>
+                        <li><h3><a href="./trailer.html">TRAILER</a></h3></li>
+                        <li><h3><a href="../sub4/gallery.html">GALLERY</a></h3></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <article id="content">
+            <div class="content_box">
+                <div class="content1 trailers">
+                    <h3>Trailers</h3>
+                    <div class="video_list">
+                        <ul>
+                            <li>
+                               <a href="#">
+                                 <div class="img_box">
+                                    <img src="./images/img_01.jpg" alt="">
+                                 </div>
+                                 <dl>
+                                     <dt>The Dark Knight (2008) Official Trailer #1 - Christopher Nolan Movie HD</dt>
+                                     <dd>2022.02.03</dd>
+                                 </dl>
+                               </a>
+                            </li>
+                            <li>
+                               <a href="#">
+                                 <div class="img_box">
+                                    <img src="./images/img_02.jpg" alt="">
+                                 </div>
+                                 <dl>
+                                     <dt>The Dark Knight - Official Trailer 2 [HD]</dt>
+                                     <dd>2022.02.03</dd>
+                                 </dl>
+                               </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                   <div class="img_box">
+                                     <img src="./images/img_03.jpg" alt="">
+                                   </div>
+                                    <dl>
+                                        <dt>The Dark Knight Rises Ultimate Trilogy Trailer - Christopher Nolan Batman Movie Legacy HD</dt>
+                                        <dd>2022.02.03</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="img_box">
+                                      <img src="./images/img_04.jpg" alt="">
+                                </div>
+                                  <dl>
+                                      <dt>The Dark Knight - Official® Trailer 1 [HD]</dt>
+                                      <dd>2022.02.03</dd>
+                                  </dl>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup">
+                        <div>
+                            <div class="popup_area">
+                                <div class="popup_area_left video-container">
+                                    <iframe src="https://www.youtube.com/embed/EXeTwQWrcwY"></iframe>
+                                </div>
+                                <div class="popup_area_right">
+                                    <dl>
+                                        <dt>asdasd</dt>
+                                        <dd>asdasdasd</dd>
+                                    </dl>
+                                </div>
+                                <a href="#" class="popup_close"><span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content2">
+                    <h3>OST</h3>
+                    <div class="content2_box">
+                        <div class="music_list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/img_05.jpg" alt="">
+                                        <p>Main Theme 01</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/img_06.jpg" alt="">
+                                        <p>Main Theme 02</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/img_07.jpg" alt="">
+                                        <p>Main Theme 03</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="music_player">
+                            <p>title</p>
+                            <p></p>
+                            <div class="img_area">
+                                <a href="#" class="music_stop">
+                                    <img src="./images/img_05_2.jpg" alt="" class="album">
+                                </a>
+                                <img src="./images/cd.png" alt="">
+                            </div>
+                            <ul>
+                                <li><a href="#" class="music_play">PLAY</a></li>
+                                <li><a href="#" class="music_pause">PAUSE</a></li>
+                            </ul>
+                        </div>
+                        <audio id="music" loop>
+                            <source src="./music/music_01.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer id="footerArea">
+            <div class="footerBox">
+                <a href="#" class="move_top">RISE</a>
+                <p>Warner Bros. Pictures' and Legendary Pictures</p>
+                <p>THE DARK KNIGHT</p>
+                <img src="./images/warner-bros.png" alt="">
+            </div>
+        </footer>
+    </div>
+
+    <script src="./common/js/jquery-1.12.4.min.js"></script>
+    <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./common/js/video.js"></script>
+    <script src="./common/js/menu.js"></script>
+    <script src="./common/js/move_top.js"></script>
+    <script src="./common/js/header_scroll.js"></script>
+    <script src="./common/js/start_title.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/music_player.js"></script>
+
+
+</body>
+</html>

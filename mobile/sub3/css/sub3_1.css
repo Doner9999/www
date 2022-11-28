@@ -1,0 +1,86 @@
+/*sub3_1 content css*/
+
+/*cont1*/
+#content .cont1{
+    margin-bottom: 40px;
+}
+#content .cont1 h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+#content .cont1 p{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+#content .cont1 p span{
+    font-weight: 500;
+    color: rgb(1, 52, 128);
+}
+
+/*cont2*/
+#content .cont2{
+    width: 100%;
+}
+#content .cont2 dl{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+#content .cont2 dl dt{
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+#content .cont2 .cont2_1{
+    width: 95%;
+    height: 150px;
+    background: url(../images/cont1/cont1Img1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content .cont2 .cont2_2{
+    width: 95%;
+    height: 150px;
+    background: url(../images/cont1/cont1Img2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+#content .cont2 .cont2_3{
+    width: 95%;
+    height: 150px;
+    background: url(../images/cont1/cont1Img3.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content .cont2 .cont2_4{
+    width: 95%;
+    height: 150px;
+    background: url(../images/cont1/cont1Img4.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+

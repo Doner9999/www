@@ -1,0 +1,278 @@
+.tabs .contlist {display: none;
+}
+
+#content .contentArea .cont1{
+    margin-bottom: 150px;
+}
+
+#content .contentArea .cont1 ul{
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+#content .contentArea .cont1 ul li{
+    float: left;
+    width: 24.9%;
+    text-align: center;
+    color: #666;
+    font-weight: 500;
+    
+}
+#content .contentArea .cont1 ul li a{
+    display: block;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    transition: all .5s;
+}
+#content .contentArea .cont1 ul li .now{
+    border: 1px solid rgb(1, 52, 128);
+    font-weight: 700;
+    
+    color: rgb(1, 52, 128);
+}
+#content .contentArea .cont1 ul li a:hover{
+    color: rgb(1, 52, 128);
+    border: 1px solid rgb(1, 52, 128);
+}
+#content .contentArea .cont1 p{
+    text-align: center;
+    color: #666;
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+
+/* #content .contentArea .cont2 p{
+    color: rgb(1, 52, 128);
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#content .contentArea .cont2 table{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#content .contentArea .cont2 table tr th{
+    border: 1px solid #999;
+    border-top: 2px solid rgb(1, 52, 128);
+    padding: 15px 0;
+}
+#content .contentArea .cont2 table tr td{
+    padding: 15px 0;
+}
+#content .contentArea .cont2 table tr th:last-child{
+    border-right: none;
+}
+#content .contentArea .cont2 table tr th:first-child{
+    border-left: none
+}
+#content .contentArea .cont2 table tr td{
+    border: 1px solid #999;
+}
+#content .contentArea .cont2 table tr td:first-child{
+    border-left: none;
+    font-weight: 700;
+}
+#content .contentArea .cont2 table tr td:last-child{
+    border-right: none;
+} */
+
+/********************************************************************/
+
+#content .contentArea .contlist .cont2{}
+
+
+#content .contentArea .contlist .cont2 .container div span{
+    position: absolute; top: 145px; left: 100px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: all .3s;
+}
+#content .contentArea .contlist .cont2 .container{
+    display: flex;
+    column-gap: 5px;
+    width: 126.66%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -760px;
+    margin-bottom: 30px;
+}
+#content .contentArea .contlist .cont2 .container div a{
+    display: block;
+}
+#content .contentArea .contlist .cont2 .container div{
+    position: relative
+}
+#content .contentArea .contlist .cont2 .container div:nth-child(1) span{
+    position: absolute; top: 150px; left: 80px;
+}
+
+#content .contentArea .contlist .cont2 .container div:nth-child(2) span{
+    position: absolute; top: 150px; left: 35px;
+}
+
+#content .contentArea .contlist .cont2 .container div:nth-child(3) span{
+    position: absolute; top: 150px; left: 60px;
+}
+
+#content .contentArea .contlist .cont2 .container div:nth-child(4) span{
+    position: absolute; top: 150px; left: 60px;
+}
+
+#content .contentArea .contlist .cont2 .container div:nth-child(5) span{
+    position: absolute; top: 150px; left: 100px;
+}
+
+#content .contentArea .contlist .cont2 .container div a img{
+    transition: all .5s;
+}
+#content .contentArea .contlist .cont2 .container div a:hover img{
+    filter: grayscale(.8);
+}
+
+#content .contentArea .contlist .cont2 .container div a:hover span{
+    top: 145px;
+    opacity: 1;
+    z-index: 10;
+}
+#content .contentArea .contlist .cont2 img{
+    /* margin-bottom: 50px; */
+}
+#content .contentArea .contlist .cont2 #cont2Table{
+    margin-top: 20px;
+}
+#content .contentArea .contlist .cont2 #cont2Table span{
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(1, 52, 128);
+}
+#content .contentArea .contlist .cont2 #cont2Table table{
+    width: 1200px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+#content .contentArea .contlist .cont2 #cont2Table table tr th{
+    border: 1px solid rgba(0,0,0,.1);
+    border-top: 2px solid rgb(1, 52, 128);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#content .contentArea .contlist .cont2 #cont2Table tr td{
+    border: 1px solid rgba(0,0,0,.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/********************************************************************/
+
+#content .contentArea .contlist .cont3 p{
+    color: rgb(1, 52, 128);
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#content .contentArea .contlist .cont3 table{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#content .contentArea  .cont3 table tr th{
+    border: 1px solid #999;
+    border-top: 2px solid rgb(1, 52, 128);
+    padding: 15px 0;
+}
+#content .contentArea .cont3 table tr td{
+    padding: 15px 0;
+}
+#content .contentArea .cont3 table tr th:last-child{
+    border-right: none;
+}
+#content .contentArea .cont3 table tr th:first-child{
+    border-left: none
+}
+#content .contentArea .cont3 table tr td{
+    border: 1px solid #999;
+}
+#content .contentArea .cont3 table tr td:first-child{
+    border-left: none;
+    font-weight: 700;
+}
+#content .contentArea .cont3 table tr td:last-child{
+    border-right: none;
+}
+
+#content .contentArea .contlist .cont4 p{
+    color: rgb(1, 52, 128);
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#content .contentArea .contlist .cont4 table{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#content .contentArea .contlist .cont4 table tr th{
+    border: 1px solid #999;
+    border-top: 2px solid rgb(1, 52, 128);
+    padding: 15px 0;
+}
+#content .contentArea .contlist .cont4 table tr td{
+    padding: 15px 0;
+}
+#content .contentArea .contlist .cont4 table tr th:last-child{
+    border-right: none;
+}
+#content .contentArea .contlist .cont4 table tr th:first-child{
+    border-left: none
+}
+#content .contentArea .contlist .cont4 table tr td{
+    border: 1px solid #999;
+}
+#content .contentArea .contlist .cont4 table tr td:first-child{
+    border-left: none;
+    font-weight: 700;
+}
+#content .contentArea .contlist .cont4 table tr td:last-child{
+    border-right: none;
+}
+
+#content .contentArea .contlist .cont5 p{
+    color: rgb(1, 52, 128);
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#content .contentArea .contlist .cont5 table{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#content .contentArea .contlist .cont5 table tr th{
+    border: 1px solid #999;
+    border-top: 2px solid rgb(1, 52, 128);
+    padding: 15px 0;
+}
+#content .contentArea .contlist .cont5 table tr td{
+    padding: 15px 0;
+}
+#content .contentArea .contlist .cont5 table tr th:last-child{
+    border-right: none;
+}
+#content .contentArea .contlist .cont5 table tr th:first-child{
+    border-left: none
+}
+#content .contentArea .contlist .cont5 table tr td{
+    border: 1px solid #999;
+}
+#content .contentArea .contlist .cont5 table tr td:first-child{
+    border-left: none;
+    font-weight: 700;
+}
+#content .contentArea .contlist .cont5 table tr td:last-child{
+    border-right: none;
+}

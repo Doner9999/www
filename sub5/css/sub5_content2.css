@@ -1,0 +1,82 @@
+#content .contentArea .cont1 p{
+    font-weight: 500;
+    color: #666;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 200px;
+}
+#content .contentArea .cont2{
+    margin-bottom: 80px;
+}
+#content .contentArea .cont2 dl dt{
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+#content .contentArea .cont2 dl dd{
+    font-weight: 500;
+    color: #666;
+    font-size: 1.3em;
+    margin-bottom: 100px;
+}
+#content .contentArea .cont2 .cont2Img{
+    background-image: url(../images/content2/cont2Img.jpg) ;
+    width: 2000px;
+    height: 600px;
+    margin-left: -400px;
+    background-attachment: fixed;
+}
+#content .contentArea .cont3{
+    height: 1300px;
+}
+#content .contentArea .cont3 .cont3Top{
+    height: 350px;
+}
+#content .contentArea .cont3 .cont3Top dl dt{
+    float: left;
+    font-size: 3em;
+    font-weight: 700;
+    width: 400px;
+}
+#content .contentArea .cont3 .cont3Top dl dd{
+    float: right;
+    width: 800px;
+    font-size: 1.2em;
+    text-align: justify;
+    font-weight: 500;
+    color: #666;
+}
+#content .contentArea .cont3 .cont3Bottom{
+    position: relative;
+}
+#content .contentArea .cont3 .cont3Bottom dl{
+    height: 390px;
+}
+#content .contentArea .cont3 .cont3Bottom dl dt{
+    float: left;
+    font-size: 3em;
+    font-weight: 700;
+    width: 400px;
+}
+#content .contentArea .cont3 .cont3Bottom dl dd{
+    float: right;
+    width: 800px;
+    font-size: 1.2em;
+    text-align: justify;
+    font-weight: 500;
+    color: #666;
+}
+#content .contentArea .cont3 .cont3Bottom ul{
+    list-style-image: url(../images/content2/headImg.jpg);
+    width: 780px;
+    font-size: 1.2em;
+    color: #333;
+    position: absolute; bottom: -400px; right: 0;
+    padding-left: 30px;
+    padding-top: 20px;
+    background: rgb(244, 247, 249);
+    text-align: justify;
+}
+#content .contentArea .cont3 .cont3Bottom ul li{
+    margin-bottom: 20px;
+}

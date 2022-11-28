@@ -1,0 +1,86 @@
+/*sub4_1 content css*/
+
+/*cont1*/
+#content .cont1 h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+#content .cont1 p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+#content .cont1{
+   
+}
+#content .cont1 .showBox{
+    width: 90%;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    position: relative;
+    background: #ececec;
+    padding-top: 15px;
+}
+#content .cont1 .showBox iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#content .cont1 ul li.hide{
+    display: none;
+}
+#content .titleArea{
+    
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 40px;
+    background: #ececec;
+    padding-bottom: 15px;
+}
+#content .titleArea dl dt{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: justify;
+}
+#content .titleArea dl dd{
+    color: #666;
+    text-align: justify;
+}
+
+
+/*영상 리스트*/
+#content .swiper-container{
+    margin-bottom: 60px;
+}
+#content .swiper-container .swiper-wrapper{
+}
+#content .swiper-container .swiper-wrapper .swiper-slide{
+    width: 35%;
+}
+#content .swiper-container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+}
+
+#content .swiper-container .swiper-wrapper .swiper-slide a{
+    display: block;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }

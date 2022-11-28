@@ -1,0 +1,881 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* 비주얼 영영 */
+#content section{position: relative;  top:50px; 
+    opacity: 0; 
+    /* transform: scale(.5); */
+    transition: all .7s
+}
+#content .boxMove{
+    top:0; opacity: 1 ; transform: scale(1);
+}
+#content section.business.boxMove2{
+    left: 0;
+    opacity: 1;
+    /* transform: scale(1); */
+}
+#content section.business{
+    position: relative;
+    left: -10px;
+    top: 0;
+    opacity: 0;
+    transition: all .7s;
+    /* transform: scale(.5); */
+}
+
+#content .text{
+    position: fixed;bottom: 50px; left: 50px;
+    z-index: 50000;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+
+
+
+.main{
+    width: 2000px;
+    position: relative; left: 50%; top:0;
+    margin-left: -1000px;
+    background: rgba(0, 0, 0, .8);
+    height: 1000px;
+    overflow: hidden;
+}
+.main .gallery ul{
+    margin-bottom: 150px;
+}
+.main .gallery ul li{
+    display:none; 
+    position: relative;
+}
+
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.main .gallery ul li dl{
+    position: absolute; left: 480px; top: 390px; 
+    opacity: 0; 
+    color: #fff; 
+    
+}
+.main .gallery ul li dl dt{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main .gallery ul li dl dd{
+    font-size: 1.7em;
+}
+
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+
+.dock{
+    
+    height: 27px;
+    position:absolute; left:500px; top:685px;
+    line-height: 27px;
+}
+
+.dock .mbutton{ 
+    margin-right:15px; 
+    cursor:pointer; 
+    display:block; 
+    /* float:left;  */
+    width:16px; height:16px;
+   /* background: rgba(255, 255, 255, .4);  */
+   /* border-radius:8px; */
+    transition: all .5s;
+    color: rgba(255, 255, 255, .4);
+    
+}
+.dock .btnArea{
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.dock .btnArea .mbutton{
+    float: left;
+}
+
+.dock .ps{ cursor:pointer; 
+    display:block; float:left; width:20px; height:20px;
+    /* background:url(../images/pause.png) no-repeat; */
+    background-size: 20px;
+    color: rgba(255, 255, 255);
+    font-size: 19px;
+}
+.main .dock .processBar{
+    display: none;
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, .4);
+    /* margin-bottom: 500px; */
+    /* display: block; */
+    float: right;
+    position: relative; top: 13px; right: 8px;
+}
+.main .dock .processBar1.on{
+    display: block;
+}
+.main .dock .processBar2.on{
+    display: block;
+}
+.main .dock .processBar3.on{
+    display: block;
+}
+.main .dock .processBar .bar{
+    width: 0;
+    transition: all 5s;
+}
+@keyframes slidein{
+    from{width: 0%;}
+    to{width: 100%;}
+
+}
+.main .dock .processBar .bar1.on{
+    width: 60px;
+    height: 2px;
+    background: #fff;
+    width: 100%; 
+    /* transition: width 5s; */
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+.main .dock .processBar .bar2.on{
+    width: 60px;
+    height: 2px;
+    background: #fff;
+    width: 100%; 
+    /* transition: width 5s; */
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+.main .dock .processBar .bar3.on{
+    width: 60px;
+    height: 2px;
+    background: #fff;
+    width: 100%; 
+    /* transition: width 5s; */
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+
+.main .btn{
+    display: block; 
+    width: 50px; 
+    height: 60px;
+    color: rgba(255, 255, 255, .5);
+    position: absolute;  top:500px;
+    cursor:pointer; 
+    font-size: 2.5em;
+    padding-left: 20px;
+    background: rgba(0, 0, 0, .1);
+}
+.main .btn:hover{
+    background: rgba(0, 0, 0, .4);
+}
+.main .btnLeft{
+    left:50%; 
+    margin-left: -953px;
+    
+}
+.main .btnRight{
+    left:50%; 
+    margin-left: 890px;
+}    
+.main .mouseScroll{
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: relative; top: -250px; left: 50%;
+    margin-left: -15px;
+    border-radius: 20px
+}
+.main .mouseScroll::after{
+    content: 'SCROLL';
+    display: block;
+    color: rgb(255, 255, 255);
+    position: absolute; bottom: -30px; left: -14px;
+    font-weight: 700;
+}
+.main .mouseScroll span{
+    height: 4px;
+    width: 4px;
+    background: #fff;
+    position: absolute; bottom: 40px; left: 13px;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-name: scrollDown;
+    border-radius: 4px;
+}
+@keyframes scrollDown{
+    /* from{bottom:40px}
+    to{bottom: 5px} */
+    0%{
+        bottom: 40px;
+    }
+    25%{
+        bottom: 20px;
+        height: 7px;
+    }
+    50%{
+        bottom: 15px;
+        height: 7px;
+    }
+    75%{
+        bottom: 10px;
+        height: 7px;
+    }
+    100%{
+        bottom: 5px;
+        height: 4px;
+    }
+}
+
+
+
+/* .main dl{
+    position: absolute; left: 400px; top: 350px;
+}
+.main dl dt{
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main dl dd{
+    color: #fff;
+    font-size: 1.56em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+} */
+
+
+/* 본문 콘텐츠 영역 */
+#content{
+    width: 1600px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+#content h3{
+    font-size: 3.75em;
+    position: relative;
+}
+#content .info .infoLeft h3::after{
+    content: 'ABOUT';
+    
+    display: block;
+    color: rgb(246, 246, 246);
+    position: absolute; top: -50px; left: -10px;
+    font-size: 4em;
+    z-index: -10;
+    font-weight: bold;
+}
+
+#content .info{
+    /* overflow: hidden; */
+
+}
+#content .info::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .info .infoLeft{
+    float: left;
+    width: 600px;
+    height: 700px;
+}
+#content .info .infoLeft dl{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#content .info .infoLeft dl dt{
+    font-size: 2.50em;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: rgba(1, 52, 128);
+}
+#content .info .infoLeft dl dd{
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: justify;
+}
+#content .info .infoLeft a{
+    color: rgba(1, 52, 128);
+    border: 2px  solid rgba(1, 52, 128);
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+#content .info .infoLeft i{
+    margin-left: 5px;
+    font-weight: 300;
+    
+}
+
+
+#content .info .infoRight{
+    float: right;
+    width: 900px;
+    height: 700px;
+    position: relative;
+}
+#content .info .infoRight::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .info .infoLeft a:hover{
+    color: #fff;
+    background: rgb(1, 52, 128);
+    
+}
+#content .info .infoRight .img1{
+    float: left;
+    position: absolute; top: 220px; left: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .2);
+}
+#content .info .infoRight .img2{
+    margin-left: 120px;
+    position: absolute; top: 0; left: 30px;
+    width: 950px;
+    height: 400px;
+    z-index: -1;
+}
+
+
+#content .business{
+    margin-top: 100px;
+    position: relative;
+    height: 800px;
+}
+/* #content .business::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+#content .business h3{
+    padding-top: 0;
+}
+#content .business p{
+    font-size: 1.6em;
+    /* margin-bottom: 50px; */
+}
+#content .business .businessImg{
+    position: absolute; top: 225px; left: -800px;
+    z-index: -1;
+    overflow: hidden;
+    width: 1920px;
+}
+/* #content .business .businessImg .slide{
+    position: absolute; top: 225px; left: -800px;
+    z-index: -1;
+    overflow: hidden;
+} */
+#content .business .businessImg .slide{
+    width: 15360px;
+    position: relative; top: 0; left: 0;
+}
+#content .business .businessImg .slide ul li{
+    float: left;
+}
+#content .business img{
+    margin-top: 40px;
+    
+}
+#content .business .businessBox{
+    color: #fff;
+    background: rgba(1, 52, 128);
+    position: relative;
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    position: relative;
+    position: absolute; left: 900px; top: 430px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .2);
+}
+#content .business .businessBox a{
+    color: #fff;
+}
+#content .business .businessBox dl dt{
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+#content .business .businessBox dl dd{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+#content .business .businessRight{
+    
+    text-align: right;
+    margin-bottom: 50px;
+}
+#content .business .businessRight h3::before{
+    content: '';
+    display: block;
+    width: 2200px;
+    height: 970px;
+    background: rgba(233, 233, 233, 0.6);
+    position: absolute; top: -80px; left: -400px;
+    z-index: -10;
+}
+#content .business .businessRight p::before{
+    content: 'BUSINESS';
+    display: block;
+    color: #fff;
+    position: absolute; top: 0; left: -10px;
+    font-size: 8em;
+    opacity: .8;
+    z-index: -10;
+    font-weight: bold;
+}
+#content .business .businessRight h3{
+    margin-bottom: 50px;
+}
+
+#content .business .businessBox .businessBoxMore a{
+    position: absolute; top: 65px; left: 280px;
+    font-size: 1.2em;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+#content .business .businessBox .businessBoxMore a:hover{
+    color: rgb(1, 52, 128);
+    background: #fff;
+    font-weight: bold;
+    
+}
+#content .business .businessBox .businessBoxMore a i{
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+
+#content .business .businessBox .businessBoxBtn{
+    position: absolute; top: 296px; left: -136px;
+    transition: all 0.5s;
+    overflow: hidden;
+    
+}
+#content .business .businessBox .businessBoxBtn a{
+    color: #fff;
+    transition: all 0.5s;
+    float: left;
+    padding-left: 28px;
+    padding-top: 18px;
+    padding-bottom: 4px;
+    background: rgba(0, 0, 0, .2);
+}
+#content .business .businessBox .businessBoxBtn .leftBtn{
+    display: block;
+    width: 40px;
+    height: 42px;
+    
+}#content .business .businessBox .businessBoxBtn .rightBtn{
+    display: block;
+    width: 40px;
+    height: 42px;
+}
+#content .business .businessBox .businessBoxBtn a:hover{
+    color: rgb(1, 52, 128);
+}
+
+
+#content .business .businessBox .businessBoxBtn .fa-chevron-left{
+    margin-right: 50px;
+    position: relative;
+}
+
+
+#content .businessMind{
+    margin-top: 250px;
+}
+
+
+
+#content .businessMind p{
+    font-size: 1.67em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#content .businessMind p::after{
+    content: 'SUSTAINABILITY';
+    display: block;
+    color: rgb(244, 244, 244);
+    position: absolute; top: -150px; left: 200px;
+    font-size: 8em;
+    z-index: -10;
+    font-weight: bold;
+}
+#content .businessMind .businessMindBox{
+    height: 500px;
+    
+}
+#content .businessMind .businessMindBox ul{
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 50px;
+    height: 500px;
+    
+}
+#content .businessMind .businessMindBox ul li{
+    float: left;
+    text-align: center;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+    margin-left: 55px;
+    margin-top: 20px;
+    background: #fff;
+    transition: all 0.5s;
+    
+}
+#content .businessMind .businessMindBox ul li:hover{
+    background: rgb(1, 52, 128);
+    transform: translateY(-10px);
+    transition-delay: 0.1s;
+}
+#content .businessMind .businessMindBox ul li:hover dl dt{
+    color: #fff;
+}
+#content .businessMind .businessMindBox ul li:hover dl dd{
+    color: #fff;
+    
+}
+
+#content .businessMind .businessMindBox ul li dl dt{
+    font-size: 2em;
+    color: rgb(1, 52, 128);
+    font-weight: 700;
+    margin-bottom: 40px;
+    
+}
+#content .businessMind .businessMindBox ul li dl dd{
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    
+}
+
+#content .businessMind .businessMindBox .businessMindImg{
+    width: 171px;
+    height: 171px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin-left: 65px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+#content .businessMind .businessMindBox ul li img{
+    transition: all 0.5s;
+}
+#content .businessMind .businessMindBox ul li:hover img{
+    transform: scale(1.2);
+}
+#content .businessMind .sustain{
+    text-align: center;
+    margin-top: 120px;
+}
+#content .businessMind .sustain a{
+    color: rgb(1, 52, 128);
+    border: 2px solid rgb(1, 52, 128);
+    padding: 5px 30px 8px 30px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    transition: all 0.5s;
+    
+}
+#content .businessMind .sustain a:hover{
+    color: #fff;
+    background: rgb(1, 52, 128);
+}
+#content .businessMind .sustain a i{
+    margin-left: 10px;
+    font-size: .9em;
+    
+}
+
+
+
+
+
+#content .news{
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+
+    height: 750px;
+}
+#content .news h3{
+    margin-bottom: 80px;
+    position: relative;
+}
+#content .news h3::before{
+    content: 'NEWS';
+    display: block;
+    position: absolute; top: -80px; left: -150px;
+    color: rgb(218, 218, 218, .5);
+    font-size: 5em;
+    z-index: -5;
+}
+#content .news h3::after{
+    content: '';
+    display: block;
+    width: 2200px;
+    height: 1000px;
+    background: rgba(233, 233, 233, 0.6);
+    position: absolute; top: -80px; left: -200px;
+    z-index: -10;
+}
+#content .news li:hover a dl dt{
+    color: rgb(1, 52, 128);
+}
+#content .news ul{
+    overflow: hidden;
+    /*margin-left: 40px;*/
+    margin-bottom: 30px;
+    height: 600px;
+    float: left;
+}
+#content .news ul li{
+    position: relative;
+}
+#content .news .newsGalleryBox{
+    width: 1540px;
+    position: relative; top: 0; left: 40px;
+    height: 500px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    
+}
+#content .news .newsGalleryBox .newsGallery{
+    width: 6660px;
+    position: relative; top: 0; left: -1235px;
+}
+#content .news .newsGalleryBox .newsGallery::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .news ul li{
+    float: left;
+    /* border-radius: 20px; */
+    background: #fff;
+    width: 430px;
+    height: 500px;
+    margin-left: 125px;
+    
+
+    transition: all 0.5s;
+    /* border: 1px solid #7b7b7b; */
+}
+#content .news ul li span{
+    transition: all .5s;
+}
+#content .news ul li:hover span:nth-child(1){
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: rgb(1, 52, 128);
+    position: absolute; top: 0; left: 0;
+}
+#content .news ul li:hover span:nth-child(2){
+    display: block;
+    width: 4px;
+    height: 100%;
+    background: rgb(1, 52, 128);
+    position: absolute; top: 0; right: 0;
+}
+#content .news ul li:hover span:nth-child(3){
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: rgb(1, 52, 128);
+    position: absolute; bottom: 0; right: 0;
+}
+#content .news ul li:hover span:nth-child(4){
+    display: block;
+    width: 4px;
+    height: 100%;
+    background: rgb(1, 52, 128);
+    position: absolute; bottom: 0; left: 0;
+}
+#content .news li:hover{
+    /* box-shadow: 5px 5px 10px 1px #333; */
+}
+#content .news ul li img{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+#content .news li:hover img{
+    transform: scale(0.95);
+}
+
+
+#content .news ul li img{
+    width: 400px;
+    height: 260px;
+    
+}
+#content .news ul li .newsImg{
+    width: 400px;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+}
+#content .news ul dl dt{
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+#content .news ul dl dd{
+    margin-bottom: 30px;
+    color: #666;
+    margin-left: 15px;
+    font-weight: 500;
+}
+#content .news li .third{
+    
+    margin-right: 20px;
+}
+#content .news .newsBtnLeft{
+    position: absolute; top: 350px; left: -50px;
+    font-size: 3em;
+    color: rgb(125, 125, 125);
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+#content .news .newsBtnLeft i{
+    transition: all 0.5s;
+}
+#content .news .newsBtnLeft:hover i{
+    color: rgb(1, 52, 128);
+}
+#content .news .newsBtnRight{
+    position: absolute; top: 350px; left: 1600px;
+    font-size: 3em;
+    color: rgb(125, 125, 125);
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+#content .news .newsBtnRight i{
+    transition: all 0.5s;
+}
+#content .news .newsBtnRight:hover i{
+    color: rgb(1, 52, 128);
+}
+#content .news .newsMore a{
+    font-size: 1.2em;
+    color: rgb(1, 52, 128);
+    border: 1px solid rgb(1, 52, 128);
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    margin-top: 20px;
+}
+#content .news .newsMore a i{
+    margin-left: 5px;
+    font-weight: 300;
+}
+#content .news .newsMore a:hover{
+    background: rgb(1, 52, 128);
+    color: #fff;
+}
+
+
+
+
+#content .recruit{
+    margin-top: 300px;
+    position: relative;
+    height: 358px;
+    width: 2000px;
+    border: 1px solid rgba(5, 5, 5, 0);
+    margin-bottom: 150px;
+}
+#content .recruit h3{
+    font-size: 3em;
+    margin-top: 250px;
+}
+#content .recruit p{
+    font-size: 1.5em;
+}
+#content .recruit a{
+    font-size: 1.25em;
+}
+#content .recruit img{
+    position: absolute; top: 10px; left: -200px;
+    z-index: -10;
+}
+#content .recruit h3{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+#content .recruit p{
+    margin-bottom: 40px;
+    color: #fff;
+}
+#content .recruit a{
+    color: #fff;
+    
+    padding: 0 10px 5px 10px;
+    border-radius: 20px;
+}
+#content .recruit a i{
+    margin-left: 5px;
+    font-weight: 500;
+    position: relative;
+    
+}
+#content .recruit a i::after{
+    content: '';
+    display: block;
+    position: absolute; top: 24px; left: -55px;
+    width: 65px;
+    height: 1px;
+    background: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+}
+#content .recruit a:hover i::after{
+    opacity: 1;
+}
+
+#showimage{
+    background: rgba(0, 0, 0, .2);
+}
+
+
+
+

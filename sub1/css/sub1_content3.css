@@ -1,0 +1,86 @@
+#content .contentArea{
+    
+    position: relative;
+}
+#content .titleArea h2{
+    position: relative;
+}
+#content .contentArea .contentAreaMent p{
+    text-align: center;
+    font-size: 1.4em;
+    color: #666;
+    line-height: 3em;
+}
+#content .contentArea .contentAreaMent{
+    margin-bottom: 60px
+}
+#content .contentArea .content1{
+    position: absolute; top: 100px; left: -40px;
+    position: relative;
+}
+#content .contentArea .content1 li{
+    display: block;
+    width: 1436px;
+    height: 625px;
+    text-indent: -1000px; 
+    background: url(../images/content3/content3Img.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#content .contentArea .content2{
+    margin-top: 300px;
+    position: relative;
+    border: 1px solid blue;
+    margin-bottom: 150px;
+}
+#content .contentArea .content2 h3{
+    margin-bottom: 80px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+#content .contentArea .content2 ul{
+    overflow: hidden;
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+#content .contentArea .content2 ul li{
+    float: left;
+    font-size: 1.5em;
+    list-style-image: url(../images/content3/headImg.jpg);
+    list-style-position: inside;
+    margin-right: 50px;
+}
+#content .contentArea .content2 .list1 li:last-child{
+    margin-left: 20px;
+}
+#content .contentArea .content2 span:nth-child(1){
+    display: block;
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgb(1, 52, 128);
+    z-index: -10;
+}
+#content .contentArea .content2 span:nth-child(2){
+    display: block;
+    position: absolute; top: 0; right: 0;
+    width: 30px;
+    height: 100%;
+    background: rgb(1, 52, 128);
+}
+#content .contentArea .content2 span:nth-child(3){
+    display: block;
+    position: absolute; bottom: 0; right: 0;
+    width: 100%;
+    height: 30px;
+    background: rgb(1, 52, 128);
+}
+#content .contentArea .content2 span:nth-child(4){
+    display: block;
+    position: absolute; bottom: 0; left: 0;
+    width: 30px;
+    height: 100%;
+    background: rgb(1, 52, 128);
+}

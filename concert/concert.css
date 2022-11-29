@@ -470,3 +470,64 @@
 	background: rgb(1, 52, 128);
 	color: #fff;
 }
+
+/* ripple */
+#ripple{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	background: #f2f2f2;
+}
+
+#ripple #ripple_writer_title ul #writer_title1{
+	margin-right: 40px;
+}
+#ripple #ripple_writer_title ul #writer_title2{
+	color: #666;
+}
+#ripple #ripple_box{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+#ripple #ripple_box2 textarea{
+	resize: none;
+	width: 980px;
+}
+#ripple #ripple_box2 textarea:focus{
+	outline: none;
+}
+#ripple #ripple_box #ripple_box3 a{
+	display: block;
+	width: 77px; 
+	height: 77px;
+	border: 1px solid black;
+	line-height: 77px;
+	text-align: center;
+}
+#ripple #ripple_writer_title ul{
+	display: flex;
+	align-items: center;
+	margin-bottom: 3px
+}
+#ripple #ripple_writer_title ul,
+#ripple #ripple_content,
+#ripple #writer_title2
+{
+	padding-left: 80px;
+}
+#ripple #writer_title2{
+	margin-bottom: 30px;
+	font-size: .9em;
+	font-weight: 300;
+	color: #666;
+}
+#ripple #writer_title3 a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(./img/close.png) no-repeat;
+	background-size: 10px 10px;
+	background-position: center;
+}

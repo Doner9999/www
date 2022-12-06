@@ -19,7 +19,7 @@ time, mark, audio, video{margin: 0; padding: 0; border: 0;
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section{display: block}
 body{font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px; color: #333;min-width: 1200px}
+    font-size: 16px; color: #333;}
 ol, ul{list-style: none}
 table{border-collapse: collapse; border-spacing: 0}
 address{font-style: normal}
@@ -56,7 +56,7 @@ textarea{
 }
 .inner{
     margin: 0 auto;
-    width: 900px;
+    width: 95%;
     position: relative;
     padding-bottom: 80px;
 }
@@ -80,9 +80,7 @@ h1{
  
 }
 
-.table_wrap>.basic_info>li{
-    float: left;
-}
+
 .table_wrap img{
     width: 96%;
     margin: 2%;
@@ -90,6 +88,7 @@ h1{
 }
 .img_wrap{
     width: 16%;
+    
 }
 .info_wrap{
     width: 83.8%;
@@ -288,11 +287,15 @@ p.name img{
     display: block;
     width: 90px;
     height: 50px;
-    position: absolute; bottom: 67px; right: -30px;
+  
     background: url(../sign.png);
     background-size: 90px 50px;
 }
-
+.inner .signArea{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 h2{
     position: relative;
 }
@@ -321,3 +324,58 @@ h2 a{
 .infoArea .table_wrap{
     display: none;
 }
+.introduce{
+    display: flex;
+}
+.introduce .img_wrap{
+  background: url(../img/profile.png) no-repeat;
+  background-position: center;
+   
+}
+
+@media all and (max-width:768px) {
+    .table_wrap{
+        border-bottom: 1px solid black;
+    }
+    .introduce {
+        display: flex;
+        flex-direction: column;
+    }
+    .img_wrap {
+        width: 100%;
+    }
+    .introduce .img_wrap {
+        background: url(../img/profile.png) no-repeat;
+        background-position: center;
+        height: 200px;
+    }
+    .info_wrap {
+        width: 100%;
+    }
+    .items li dt,
+    .items li dd{
+        font-size: 3vw;
+    }
+    .about .introduce .info_wrap{
+        border-top: 1px solid black;
+    }
+    .about .introduce .info_wrap .items li{
+        width: 100%;
+    }
+    .items{
+        border-bottom: 0;
+    }
+    .items.half dt {
+        width: 27%;
+        border-left: 0;
+    }
+    .items.half dd {
+        width: 72.5%;
+    }
+    .items li dl{
+        border-bottom: 1px solid black;
+    }
+    .items li dt{
+        border-left: 0;
+    }
+  }

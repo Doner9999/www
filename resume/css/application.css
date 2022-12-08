@@ -59,6 +59,7 @@ textarea{
     width: 95%;
     position: relative;
     padding-bottom: 80px;
+    max-width: 1200px;
 }
 h1{
     font-size: 50px;
@@ -224,6 +225,7 @@ h2{
 }
 .portfolio .items dd{
     width: 37.5%;
+    word-break: break-all;
 }
 .items a{
     text-decoration: underline;
@@ -333,6 +335,19 @@ h2 a{
    
 }
 
+.infoArea .head ul{
+    display: flex;
+}
+.infoArea .head ul li:nth-child(1){
+    flex-basis: 25%;
+}
+.infoArea .items dl{
+    display: flex;
+}
+.infoArea .items dl dt{
+    flex-basis: 25%;
+}
+
 @media all and (max-width:768px) {
     .table_wrap{
         border-bottom: 1px solid black;
@@ -377,5 +392,12 @@ h2 a{
     }
     .items li dt{
         border-left: 0;
+    }
+    .infoArea .items dl dt,
+    .infoArea .items dl dd{
+        font-size: 12px;
+    }
+    .infoArea .items dl{
+        border-bottom: 1px solid black;
     }
   }
